@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" href="../icon.png">
+	<title>About Treasure catalog</title>
+	<link rel="stylesheet" href="../styles.css">
+	<style>
+		h1 {
+			font-weight: normal;
+			font-size: 2.5rem;
+		}
+		h2 {
+			font-weight: normal;
+			font-size: inherit;
+			color: var(--blue);
+			margin-top: 2rem;
+			margin-bottom: -1rem;
+		}
+		
+		#logo {
+			width: 2.5rem;
+			vertical-align: middle;
+			transform: translateY(-0.25rem);
+			height: 2.5rem;
+			display: inline-block;
+			background: var(--blue);
+			border-radius: 100%;
+			user-select: none;
+			margin-right: 1rem;
+		}
+		
+		body {
+			width: 48rem;
+			margin: 12rem auto;
+			line-height: 150%;
+			overflow-y: scroll;
+		}
+		
+		span {
+			color: var(--blue);
+		}
+		img {
+			width: 100%;
+			border: solid 2px var(--white);
+			box-sizing: border-box;
+			border-radius: 0.25rem;
+			display: block;
+			margin: 1rem 0;
+		}
+	</style>
+</head>
+<body>
+	<h1><div id="logo">&nbsp;</div>Treasure catalogue</h1>
+	<p><span>Treasure catalog</span> is:</p>
+	<ul>
+		<li>A website I made</li>
+		<li>A catalog of every item in Animal Crossing: New Horizons</li>
+		<li>A tool to create wishlists of items you want<ul><li>and export them for use with drop bots!</li></ul></li>
+	</ul>
+	<div style="margin: 3rem 0;">
+		<img src="screenshot.png">
+		<div style="text-align: center; color: var(--gray); font-size: 1rem;">A screenshot of the website</div>
+	</div>
+	<p>On the left is the entire item catalogue, with options to filter by names, categories, and tags. Your list of saved items is on the right. In the bottom-right corner, you can</p>
+	<ul>
+		<li>Switch between your saved wishlists, and add or delete wishlists</li>
+		<li>Export the list as drop codes for a drop bot</li>
+		<li>Enable advanced filters, which show extra items that aren't usually in the list</li>
+	</ul>
+	<h2>How does this website store my data?</h2>
+	<p>Your wishlist is saved every time you add or remove an item. I store wishlists in localStorage, a small text file your browser associates with each website you visit. I cannot read your wishlists. Your wishlists will not save across different browsers or devices.</p>
+	<h2>What are tags?</h2>
+	<p>Several parts of the game (the HHA for furniture, Label for clothes) associate items with various tags. I combine all these systems into one big tag list. The tags are very weird:</p>
+	<ul>
+		<li>They overlap in weird ways; "<span>Plants</span>" and "<span>Plant</span>" are separate tags</li>
+		<li>A few tags have nonsense names like "<span>Floor simple gold silver bronze</span>"</li>
+		<li>Some tags only belong to one item</li>
+	</ul>
+	<p>Searching by tags is a little unreliable.</p>
+	<h2>Special thanks</h2>
+	<p>Thank you to <span>Tessa's Treasure Islands</span> Discord for hosting the drop bots I personally use! And also thank you to <span>acnhcdn.com</span> for being a lovely CDN for ACNH images!</p>
+</body>
+</html>

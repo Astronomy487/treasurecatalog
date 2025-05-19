@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" href="icon.png">
+	<title>Treasure catalog</title>
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,500,0,0" />
+</head>
+<body>
+	<main>
+		<div id="left">
+			<table id="search-parameters">
+				<tr>
+					<th>Item name</th>
+					<th>Selected categories</th>
+					<th>Internal tags</th>
+				</tr>
+				<tr>
+					<td><input id="search-parameters-name" onchange="presentResults();"></td>
+					<td>
+						<div id="search-parameters-category" onclick="makeCategoriesDropdown(this.parentElement);">Everything</div>
+					</td>
+					
+					<td><span id="search-parameters-tags"></span><button id="search-parameters-add-tag" class="subtle-button" onclick="promptAddTag(this.parentElement);">Add tag</button></td>
+				</tr>
+			</table>
+			<div id="results"></div>
+		</div>
+		<div id="right">
+			<input id="wishlist-name" onchange="changeCurrentWishlistName(this.value);"></input>
+			<div id="wishlist-entries"></div>
+			<div id="wishlist-entries-bottom-message"></div>
+			<div class="many-subtle-buttons">
+				<button onclick="wishlistsPage();" class="subtle-button"><span class="material-icon">shopping_cart</span>Go to my saved wishlists</button>
+				<button onclick="copyDropCodes(); makeParticle(event.clientX, event.clientY, 'Copied to clipboard');" class="subtle-button"><span class="material-icon">output</span>Copy drop codes</button>
+				<button onclick="promptAdvancedFilters();" class="subtle-button"><span class="material-icon">tune</span>Advanced filters</button>
+				<button onclick="" class="subtle-button"><span class="material-icon">info</span>About this website</button>
+			</div>
+		</div>
+	</main>
+	<div id="loading-cover">
+		<div>
+			<div style="vertical-align: middle; transform: translateY(-0.125rem); height: 2rem; width: 2rem; display: inline-block; background: var(--blue); border-radius: 100%; user-select: none; margin-right: 1rem;"></div>Treasure catalog
+			<br>Loading...
+		</div>
+	</div>
+	<!-- <script src="itemdata.js" type="module"></script>
+	<script src="tagdisplaynames.js" type="module"></script>
+	<script src="script.js" type="module"></script> -->
+	<script>
+		// window.onloadd = function() {document.querySelector("#loading-cover").remove();};
+		Promise.all([
+			import("./itemdata.js"),
+			import("./tagdisplaynames.js"),
+			import("./script.js")
+		]).then(() => {
+			document.querySelector("#loading-cover").remove();
+		}).catch(error => {
+			console.error("Error loading scripts:", error);
+		});
+
+	</script>
+</body>
+</html>
