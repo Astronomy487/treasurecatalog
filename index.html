@@ -49,16 +49,15 @@
 	<script src="script.js" type="module"></script> -->
 	<script>
 		// window.onloadd = function() {document.querySelector("#loading-cover").remove();};
-		Promise.all([
-			import("./itemdata.js"),
-			import("./tagdisplaynames.js"),
-			import("./script.js")
-		]).then(() => {
-			document.querySelector("#loading-cover").remove();
-		}).catch(error => {
-			console.error("Error loading scripts:", error);
-		});
-
+		import("./itemdata.js")
+			.then(() => import("./tagdisplaynames.js"))
+			.then(() => import("./script.js"))
+			.then(() => {
+				document.querySelector("#loading-cover").remove();
+			})
+			.catch(error => {
+				console.error("Error loading scripts:", error);
+			});
 	</script>
 </body>
 </html>
