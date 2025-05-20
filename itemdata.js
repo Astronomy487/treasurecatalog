@@ -16361,7 +16361,7 @@ music	Two Days Ago			https://acnhcdn.com/latest/FtrIcon/mjk_Ototoi.png	1	0x99b
 music	Wandering			https://acnhcdn.com/latest/FtrIcon/mjk_Horo.png	1	0x9ad	
 music	Welcome Horizons			https://acnhcdn.com/latest/FtrIcon/mjk_MainTheme.png	1	0x10de	
 other	acorn		etc	https://acnhcdn.com/latest/FtrIcon/DIYAcorn.png	30	0x165f	
-trees	apple		plants;fruit	https://acnhcdn.com/latest/FtrIcon/Apple.png	10	0x8a5	
+tree	apple		plants;fruit	https://acnhcdn.com/latest/FtrIcon/Apple.png	10	0x8a5	
 fragments	Aquarius fragment		etc	https://acnhcdn.com/latest/FtrIcon/StarpieceAquarius.png	10	0x1762	
 fragments	Aries fragment		etc	https://acnhcdn.com/latest/FtrIcon/StarpieceAries.png	10	0x1764	
 crafting materials	bamboo piece		etc	https://acnhcdn.com/latest/FtrIcon/DIYBamboo.png	30	0x9c5	
@@ -16391,11 +16391,11 @@ vegetable	carrot		plants;vegetable	https://acnhcdn.com/latest/FtrIcon/Carrot.png
 vegetable	carrot start		plants;vegetable;carrot	https://acnhcdn.com/latest/FtrIcon/SeedCarrot.png	10	0xbe5	
 tree	cedar sapling		plants;tree	https://acnhcdn.com/latest/FtrIcon/SeedCedar.png	10	0xaf0	
 wrapping	chartreuse wrapping paper		etc	https://acnhcdn.com/latest/FtrIcon/WPaperLightGreen.png	10	0x1e06	
-trees	cherry		plants;fruit	https://acnhcdn.com/latest/FtrIcon/Cherry.png	10	0x8ef	
+tree	cherry		plants;fruit	https://acnhcdn.com/latest/FtrIcon/Cherry.png	10	0x8ef	
 other	cherry-blossom petal		etc	https://acnhcdn.com/latest/FtrIcon/Sakurapetal.png	10	0x16e3	
 crafting materials	clay		etc	https://acnhcdn.com/latest/FtrIcon/DIYClay.png	30	0xc12	
 crafting materials	clump of weeds		plants	https://acnhcdn.com/latest/FtrIcon/PltWeed.png	99	0xa40	
-trees	coconut		plants;fruit	https://acnhcdn.com/latest/FtrIcon/Coconut.png	10	0x8f0	
+tree	coconut		plants;fruit	https://acnhcdn.com/latest/FtrIcon/Coconut.png	10	0x8f0	
 shells	conch		etc	https://acnhcdn.com/latest/FtrIcon/ShellDriftHora.png	10	0x560	
 shells	coral		etc	https://acnhcdn.com/latest/FtrIcon/ShellDriftSango.png	10	0x564	
 shells	cowrie		etc	https://acnhcdn.com/latest/FtrIcon/ShellDriftTakara.png	10	0x566	
@@ -16443,7 +16443,7 @@ wrapping	mint wrapping paper		etc	https://acnhcdn.com/latest/FtrIcon/WPaperMint.
 wrapping	navy wrapping paper		etc	https://acnhcdn.com/latest/FtrIcon/WPaperNavy.png	10	0x1e0b	
 other	Nook Miles Ticket		etc	https://acnhcdn.com/latest/FtrIcon/MilePlaneTicket.png	10	0x16db	
 other	old tire		etc	https://acnhcdn.com/latest/FtrIcon/TrashTire.png	1	0xd8e	
-trees	orange		plants;fruit	https://acnhcdn.com/latest/FtrIcon/Orange.png	10	0x8a6	
+tree	orange		plants;fruit	https://acnhcdn.com/latest/FtrIcon/Orange.png	10	0x8a6	
 flower	orange cosmos		plants;flower;cosmos	https://acnhcdn.com/latest/FtrIcon/FlwCosmosOrange.png	10	0xb37	
 flower	orange hyacinths		plants;flower;hyacinths	https://acnhcdn.com/latest/FtrIcon/FlwHyacinthOrange.png	10	0xe9d	
 flower	orange lilies		plants;flower;lilies	https://acnhcdn.com/latest/FtrIcon/FlwYuriOrange.png	10	0xbb3	
@@ -16457,8 +16457,8 @@ bush	orange-tea-olive start		plants;bush;teaolive	https://acnhcdn.com/latest/Ftr
 flower	orange-windflower bag		plants	https://acnhcdn.com/latest/FtrIcon/SeedAnemonesOrange.png	10	0xe82	
 wrapping	otoshidama envelope		etc	https://acnhcdn.com/latest/FtrIcon/OtoshidamaJp.png	10	0x3684	
 other	Paradise Planning case		etc	https://acnhcdn.com/latest/FtrIcon/SmartphoneCaseOtg.png	1	0x39e4	
-trees	peach		plants;fruit	https://acnhcdn.com/latest/FtrIcon/Peach.png	10	0x8ee	
-trees	pear		plants;fruit	https://acnhcdn.com/latest/FtrIcon/Pear.png	10	0x8ed	
+tree	peach		plants;fruit	https://acnhcdn.com/latest/FtrIcon/Peach.png	10	0x8ee	
+tree	pear		plants;fruit	https://acnhcdn.com/latest/FtrIcon/Pear.png	10	0x8ed	
 other	pearl		etc	https://acnhcdn.com/latest/FtrIcon/Pearl.png	30	0x32a8	
 other	pine cone		etc	https://acnhcdn.com/latest/FtrIcon/DIYPinecone.png	30	0x1660	
 flower	pink cosmos		plants;flower;cosmos	https://acnhcdn.com/latest/FtrIcon/FlwCosmosPink.png	10	0xb33	
@@ -25020,43 +25020,4 @@ vegetable	small tomato sprout		plant;vegetable;tomato	https://acnhcdn.com/latest
 vegetable	large wheat sprout		plant;vegetable;wheat	https://acnhcdn.com/latest/MenuIcon/PltWheat.png	1	0xbd9	growthstages
 vegetable	medium wheat sprout		plant;vegetable;wheat	https://acnhcdn.com/latest/MenuIcon/PltWheat.png	1	0xbd8	growthstages
 vegetable	ripe wheat plant		plant;vegetable;wheat	https://acnhcdn.com/latest/MenuIcon/PltWheat.png	1	0x3263	
-vegetable	small wheat sprout		plant;vegetable;wheat	https://acnhcdn.com/latest/MenuIcon/PltWheat.png	1	0xbd7	growthstages
-other	spoiled turnips		etc	https://acnhcdn.com/latest/FtrIcon/Kabu_Spoil.png	1	0xa52	weird
-other	Bell bag		etc	https://acnhcdn.com/latest/FtrIcon/PhotoStudioBellBag.png	99	0x1e33	weird
-other	Bell coin		etc	https://acnhcdn.com/latest/FtrIcon/PhotoStudioBell.png	9	0x1e32	weird
-other	What was this again?			https://acnhcdn.com/latest/FtrIcon/LostQuestBagDust.png		0x1222	weird
-other	What was this again?			https://acnhcdn.com/latest/FtrIcon/LostQuestBookDust.png		0x1223	weird
-other	What was this again?			https://acnhcdn.com/latest/FtrIcon/LostQuestNoteDust.png		0x1533	weird
-other	What was this again?			https://acnhcdn.com/latest/MenuIcon/Present2.png		0x9f2	weird
-other	Present			https://acnhcdn.com/latest/MenuIcon/Present.png		0x1180	weird
-other	turnips			https://acnhcdn.com/latest/FtrIcon/PhotoStudioKabu.png		0x1e36	weird
-other	treasure			https://acnhcdn.com/latest/MenuIcon/Present2.png		0x9f1	weird
-other	delivery box			https://acnhcdn.com/latest/MenuIcon/Present2.png		0x1095	weird
-other	gift			https://acnhcdn.com/latest/FtrIcon/DummyWrappingOrnament.png		0x35e1	weird
-other	present (black)		etc	https://acnhcdn.com/latest/FtrIcon/DummyWrappingBlack.png	1	0x1e22	weird
-other	present (blue)		etc	https://acnhcdn.com/latest/FtrIcon/DummyWrappingBlue.png	1	0x1e1c	weird
-other	present (brown)		etc	https://acnhcdn.com/latest/FtrIcon/DummyWrappingBrown.png	1	0x1e20	weird
-other	present (chartreuse)		etc	https://acnhcdn.com/latest/FtrIcon/DummyWrappingLightGreen.png	1	0x1e16	weird
-other	present (gold)		etc	https://acnhcdn.com/latest/FtrIcon/DummyWrappingGold.png	1	0x1e1f	weird
-other	present (gray)		etc	https://acnhcdn.com/latest/FtrIcon/DummyWrappingGary.png	1	0x1e21	weird
-other	present (green)		etc	https://acnhcdn.com/latest/FtrIcon/DummyWrappingGreen.png	1	0x1e17	weird
-other	present (light-blue)		etc	https://acnhcdn.com/latest/FtrIcon/DummyWrappingLightBlue.png	1	0x1e19	weird
-other	present (mint)		etc	https://acnhcdn.com/latest/FtrIcon/DummyWrappingMint.png	1	0x1e18	weird
-other	present (navy)		etc	https://acnhcdn.com/latest/FtrIcon/DummyWrappingNavy.png	1	0x1e1b	weird
-other	present (orange)		etc	https://acnhcdn.com/latest/FtrIcon/DummyWrappingOrange.png	1	0x1e15	weird
-other	present (pink)		etc	https://acnhcdn.com/latest/FtrIcon/DummyWrappingPink.png	1	0x1e14	weird
-other	present (purple)		etc	https://acnhcdn.com/latest/FtrIcon/DummyWrappingPurple.png	1	0x1e1a	weird
-other	present (red)		etc	https://acnhcdn.com/latest/FtrIcon/DummyWrappingRed.png	1	0x1e1e	weird
-other	present (white)		etc	https://acnhcdn.com/latest/FtrIcon/DummyWrappingWhite.png	1	0x1e1d	weird
-other	present (yellow)		etc	https://acnhcdn.com/latest/FtrIcon/DummyWrappingYellow.png	1	0x1e13	weird
-other	lost item			https://acnhcdn.com/latest/MenuIcon/Porch.png		0x946	weird
-other	lost item			https://acnhcdn.com/latest/MenuIcon/Book.png		0x947	weird
-other	lost item			https://acnhcdn.com/latest/MenuIcon/LostQuestMemo.png		0x1532	weird
-other	lucky money			https://acnhcdn.com/latest/MenuIcon/OtoshidamaSealCh.png		0x36da	weird
-other	otoshidama			https://acnhcdn.com/latest/MenuIcon/OtoshidamaSealJp.png		0x36dc	weird
-other	sebaetdon			https://acnhcdn.com/latest/MenuIcon/OtoshidamaSealKr.png		0x36db	weird
-other	communicator part			https://acnhcdn.com/latest/MenuIcon/JohnyParts.png		0x94d	weird
-other	communicator			https://acnhcdn.com/latest/MenuIcon/PirateQuest.png		0x3331	weird
-other	ぞうきんがけエプロン		ぞうきんがけ	https://acnhcdn.com/latest/FtrIcon/TopsTexTopCoatHCloth0.png		0x323b	weird
-other	ぞうきんがけのズボン		ぞうきんがけ	https://acnhcdn.com/latest/FtrIcon/BottomsTexPantsNormalCloth0.png		0x323c	weird
-other	ぞうきんがけのバンダナ		ぞうきんがけ	https://acnhcdn.com/latest/FtrIcon/CapHatCloth0.png		0x323d	weird`;
+vegetable	small wheat sprout		plant;vegetable;wheat	https://acnhcdn.com/latest/MenuIcon/PltWheat.png	1	0xbd7	growthstages`;
