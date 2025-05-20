@@ -20,8 +20,7 @@
 					<td>
 						<div id="search-parameters-category" onclick="makeCategoriesDropdown(this.parentElement);">Everything</div>
 					</td>
-					
-					<td><span id="search-parameters-tags"></span><button id="search-parameters-add-tag" class="subtle-button" onclick="promptAddTag(this.parentElement);">Add tag</button></td>
+					<td style="vertical-align: middle;"><span id="search-parameters-tags"></span><button id="search-parameters-add-tag" class="subtle-button" onclick="promptAddTag(this.parentElement);">Add tag</button></td>
 				</tr>
 			</table>
 			<div id="results"></div>
@@ -34,30 +33,23 @@
 				<button onclick="wishlistsPage();" class="subtle-button"><span class="material-icon">shopping_cart</span>Go to my saved wishlists</button>
 				<button onclick="copyDropCodes(); makeParticle(event.clientX, event.clientY, 'Copied to clipboard');" class="subtle-button"><span class="material-icon">output</span>Copy drop codes</button>
 				<button onclick="promptAdvancedFilters();" class="subtle-button"><span class="material-icon">tune</span>Advanced filters</button>
-				<button onclick="" class="subtle-button"><span class="material-icon">info</span>About this website</button>
+				<button onclick="window.location.href = 'https://www.astronomy487.com/treasurecatalog/about';" class="subtle-button"><span class="material-icon">info</span>About this website</button>
 			</div>
 		</div>
 	</main>
 	<div id="loading-cover">
 		<div>
-			<div style="vertical-align: middle; transform: translateY(-0.125rem); height: 2rem; width: 2rem; display: inline-block; background: var(--blue); border-radius: 100%; user-select: none; margin-right: 1rem;"></div>Treasure catalog
-			<br>Loading...
+			<div style="vertical-align: middle; transform: translateY(-0.125rem); height: 2rem; width: 2rem; display: inline-block; background: var(--blue); border-radius: 100%; user-select: none; margin-right: 0.5rem;"></div>
+			<div style="font-size: 1.75em; display: inline-block; vertical-align: middle; transform: translateY(-0.25rem);">Treasure catalog</div>
+			<br>
+			<div style="color: var(--gray); font-size: 1.125rem; margin-top: 1rem;">Loading...</div>
 		</div>
 	</div>
-	<!-- <script src="itemdata.js" type="module"></script>
-	<script src="tagdisplaynames.js" type="module"></script>
-	<script src="script.js" type="module"></script> -->
+	<script src="itemdata.js"></script>
+	<script src="tagdisplaynames.js" ></script>
+	<script src="script.js"></script>
 	<script>
-		// window.onloadd = function() {document.querySelector("#loading-cover").remove();};
-		import("./itemdata.js")
-			.then(() => import("./tagdisplaynames.js"))
-			.then(() => import("./script.js"))
-			.then(() => {
-				document.querySelector("#loading-cover").remove();
-			})
-			.catch(error => {
-				console.error("Error loading scripts:", error);
-			});
+		window.onload = function() {document.querySelector("#loading-cover").remove();};
 	</script>
 </body>
 </html>

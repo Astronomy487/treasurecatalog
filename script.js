@@ -1,4 +1,6 @@
-function simpleCapitalize(str) {
+function simpleCapitalize(str, forceLowerCase = false) {
+	if (forceLowerCase)
+		return str[0].toUpperCase() + str.substring(1).toLowerCase();
 	return str[0].toUpperCase() + str.substring(1);
 }
 
@@ -19,7 +21,7 @@ for (let line of data.split("\n")) {
 	});
 }
 function prepareTextForSearch(txt) {
-	return txt.trim().toLowerCase().replace(/[ %&'(),-.?←↑→;!]/g, "");
+	return txt.trim().toLowerCase().replace(/[ %&'(),-.?←↑→;!]/g, "").replace(/[éè]/g, "e").replace(/[àáâ]/g, "a").replace(/[ñ]/g, "n").replace(/[π]/g, "pi");
 }
 items = items.sort((a,b) => a.name > b.name ? 1 : -1);
 for (let i = 0; i < items.length; i++) items[i].order = i;
@@ -72,7 +74,7 @@ let categoriesGroups = [
 	],
 	[
 		["Plants", ["flower", "vegetable", "tree", "bush"]],
-		["Items", ["tools_goods", "fencing", "other"]]
+		["Items", ["tools_goods", "fencing", "other", "crafting materials", "shells", "fragments", "wrapping"]]
 	],
 	[
 		["Clothes", ["tops", "dress-up", "headwear", "bottoms", "shoes", "socks", "accessories", "bags", "umbrellas", "clothing other"]]
@@ -132,7 +134,7 @@ function makeCategoriesDropdown(parentItem) {
 		let text;
 		if (labelsPresent.length == 0) text = "<span style=\"color: var(--black); background: var(--red); border-radius: 100%; display: inline-block; width: 1.125rem; text-align: center;\">!</span> Nothing";
 		else if (labelsPresent.length == 1) text = labelsPresent[0];
-		else if (labelsPresent.length == 2) text = labelsPresent.join(" and ");
+		else if (labelsPresent.length == 2) text = simpleCapitalize(labelsPresent.join(" and "), true);
 		else if (!Object.keys(categories).filter(x => !acceptableCategories[x]).length) text = "Everything";
 		else text = Object.keys(categories).filter(x => acceptableCategories[x]).length + " categories";
 		document.querySelector("#search-parameters-category").innerHTML = text;
@@ -218,52 +220,71 @@ function addTag(tag) {
 	if (selectedTags[tag] || !tags[tag]) return;
 	selectedTags[tag] = true;
 	let tagPlate = document.createElement("span");
-	tagPlate.setAttribute("class", "tag-plate");
+	tagPlate.setAttribute("class", "tag-plate xable");
 	tagPlate.innerText = tagDisplayName[tag];
 	tagPlate.onclick = function() {
 		removeTag(this, tag);
 	}
 	document.querySelector("#search-parameters-tags").appendChild(tagPlate);
 	presentResults();
+	document.querySelector("#search-parameters-add-tag").style.marginLeft = "0.25rem";
 }
-
-/* function promptAddTag() {
-	let modal = prepareModal();
-	if (!modal) return;
-	let header = modal.appendChild(document.createElement("div"));
-	header.innerText = "Choose a tag";
-	header.style.margin = "1rem 0";
-	
-	let datalist = modal.appendChild(document.createElement("datalist"));
-	datalist.id = "tags-datalist";
-	for (let tag of Object.keys(tags).sort((a,b)=>tags[b]-tags[a])) if (!selectedTags[tag]) {
-		datalist.appendChild(document.createElement("option")).innerText = tagDisplayName[tag];
-	}
-	
-	let input = modal.appendChild(document.createElement("input"));
-	input.setAttribute("autoComplete", "on");
-	input.setAttribute("list", "tags-datalist");
-	
-	input.focus();
-	
-	let button = modal.appendChild(document.createElement("button"));
-	button.innerText = "Add tag";
-	button.style.marginLeft = "0.5rem";
-	button.onclick = function() {
-		for (let tag in tags) if (tagDisplayName[tag] == input.value) addTag(tag);
-		document.querySelector(".modal-cover").onclick();
-	}
-} */
 
 function promptAddTag(parentItem) {
 	let modal = preparePositionalModal(parentItem);
 	if (modal == undefined) return;
+	modal.style.width = "32rem";
+	let input = modal.appendChild(document.createElement("input"));
+	input.select();
+	input.style.marginTop = "0.75rem";
+	let availableTags = modal.appendChild(document.createElement("div"));
+	availableTags.setAttribute("id", "available-tags");
+	let divs = [];
+	for (let tag of Object.keys(tagDisplayName).sort((a, b) => tags[b] - tags[a])) {
+		let tagName = tagDisplayName[tag];
+		let div = document.createElement("div");
+		div.innerText = tagName;
+		div.setAttribute("class", "tag-plate choosable");
+		div.onclick = function() {
+			addTag(tag);
+			showAvailableTags(true);
+		}
+		divs.push({
+			tag: tag,
+			text: prepareTextForSearch(tagName),
+			div: div
+		});
+	}
+	input.oninput = function() {
+		showAvailableTags();
+	}
+	showAvailableTags();
+	function showAvailableTags(allowCloseIfNothing = false) {
+		let searchText = prepareTextForSearch(input.value);
+		for (let div of divs) div.available = div.text.includes(searchText) && !selectedTags[div.tag];
+		let totalAvailable = divs.filter(x => x.available).length;
+		if (totalAvailable == 0 && allowCloseIfNothing) return document.querySelector(".modal-cover").onclick();
+		while (availableTags.firstChild) availableTags.firstChild.remove();
+		let shown = 0;
+		for (let div of divs) if (div.available) {
+			availableTags.appendChild(div.div);
+			shown++;
+			if (shown >= 50) break;
+		}
+		let extraCommentText = undefined;
+		if (shown < totalAvailable) extraCommentText = shown + " out of " + totalAvailable + " tag" + (totalAvailable==1?"":"s") + " shown";
+		if (totalAvailable == 0) extraCommentText = "No tags";
+		if (extraCommentText) {
+			let extraComment = availableTags.appendChild(document.createElement("div"));
+			extraComment.innerText = extraCommentText
+			extraComment.style.marginTop = "0.5rem";
+			extraComment.style.fontSize = "0.875rem";
+			extraComment.style.color = "var(--gray)";
+		}
+	}
 }
 
-let advancedFilters = {
-	"": true,
-	"growthstages": false
-};
+let advancedFilters = {"":true};
 function promptAdvancedFilters() {
 	let modal = prepareModal();
 	if (!modal) return;
@@ -272,7 +293,8 @@ function promptAdvancedFilters() {
 	modal.appendChild(document.createElement("p")).innerHTML = "These items will <span style=\"color: var(--accent); animation: 1s flash-accent infinite;\">flash blue and white</span> to let you know their deal.";
 	for (let [setting, image, headtext, bodytext] of [
 		["growthstages", "https://acnhcdn.com/latest/MenuIcon/PltBushPlumeriaWhite.png", "List growth stages separately?", "Plants with several growth stages (trees, bushes, flowers, vegetables) have separate internal IDs for each growth stage. Enable this to show each of these stages separately."],
-		["fakeart", "https://acnhcdn.com/latest/FtrIcon/FtrSculptureRosettaStoneFake.png", "Show fake art?", "Around half of Redd's artwork is fake. These counterfeits are hidden by default. Enable this to show fake artwork."]
+		["fakeart", "https://acnhcdn.com/latest/FtrIcon/FtrSculptureRosettaStoneFake.png", "Show fake art?", "Around half of Redd's artwork is fake. These counterfeits are hidden by default. Enable this to show fake artwork."],
+		//["weird", "https://acnhcdn.com/latest/FtrIcon/LostQuestBagDust.png", "", "Strange items"],
 	]) {
 		modal.appendChild(document.createElement("hr"));
 		let header = modal.appendChild(document.createElement("div"));
@@ -306,7 +328,8 @@ function wishlistsPage() {
 	let modal = prepareModal();
 	if (!modal) return;
 	modal.style.width = "32rem";
-	modal.appendChild(document.createElement("h2")).innerText = "My saved wishlists";
+	modal.style.minHeight = "24rem";
+	modal.appendChild(document.createElement("p")).innerText = "Here is a list of your saved wishlists.";
 	let table = modal.appendChild(document.createElement("table"));
 	table.setAttribute("class", "wishlists-list");
 	for (let wishlistName of Object.keys(wishlists).sort()) {
@@ -316,11 +339,15 @@ function wishlistsPage() {
 		let countElement = tr.appendChild(document.createElement("td"));
 		countElement.innerText = (count==0 ? "No items" : (count==1 ? "1 item" : count + " items"));
 		let deleteButton = tr.appendChild(document.createElement("td")).appendChild(document.createElement("button"));
+		deleteButton.setAttribute("class", "subtle-button");
 		deleteButton.innerText = "Remove";
 		deleteButton.onclick = function(e) {
+			let lastOne = Object.keys(wishlists).length == 1;
 			removeWishlist(wishlistName);
 			e.stopPropagation();
-			document.querySelector(".modal-cover").onclick();
+			tr.remove();
+			if (lastOne) document.querySelector(".modal-cover").onclick();
+			//document.querySelector(".modal-cover").onclick();
 		};
 		tr.onclick = function() {
 			goToWishlist(wishlistName);
@@ -339,6 +366,7 @@ function removeTag(div, tag) {
 	if (!selectedTags[tag] || !tags[tag]) return;
 	div.remove();
 	delete selectedTags[tag];
+	if (!Object.keys(selectedTags).length) document.querySelector("#search-parameters-add-tag").style.marginLeft = "0";
 	presentResults();
 }
 

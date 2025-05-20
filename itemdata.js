@@ -16361,251 +16361,230 @@ music	Two Days Ago			https://acnhcdn.com/latest/FtrIcon/mjk_Ototoi.png	1	0x99b
 music	Wandering			https://acnhcdn.com/latest/FtrIcon/mjk_Horo.png	1	0x9ad	
 music	Welcome Horizons			https://acnhcdn.com/latest/FtrIcon/mjk_MainTheme.png	1	0x10de	
 other	acorn		etc	https://acnhcdn.com/latest/FtrIcon/DIYAcorn.png	30	0x165f	
-other	apple		plants;fruit	https://acnhcdn.com/latest/FtrIcon/Apple.png	10	0x8a5	
-other	Aquarius fragment		etc	https://acnhcdn.com/latest/FtrIcon/StarpieceAquarius.png	10	0x1762	
-other	Aries fragment		etc	https://acnhcdn.com/latest/FtrIcon/StarpieceAries.png	10	0x1764	
-other	bamboo piece		etc	https://acnhcdn.com/latest/FtrIcon/DIYBamboo.png	30	0x9c5	
-other	bamboo shoot		plants	https://acnhcdn.com/latest/FtrIcon/BambooShoot.png	10	0x8f7	
-other	Bell bag		etc	https://acnhcdn.com/latest/FtrIcon/PhotoStudioBellBag.png	99	0x1e33	
-other	Bell coin		etc	https://acnhcdn.com/latest/FtrIcon/PhotoStudioBell.png	9	0x1e32	
+trees	apple		plants;fruit	https://acnhcdn.com/latest/FtrIcon/Apple.png	10	0x8a5	
+fragments	Aquarius fragment		etc	https://acnhcdn.com/latest/FtrIcon/StarpieceAquarius.png	10	0x1762	
+fragments	Aries fragment		etc	https://acnhcdn.com/latest/FtrIcon/StarpieceAries.png	10	0x1764	
+crafting materials	bamboo piece		etc	https://acnhcdn.com/latest/FtrIcon/DIYBamboo.png	30	0x9c5	
+crafting materials	bamboo shoot		plants	https://acnhcdn.com/latest/FtrIcon/BambooShoot.png	10	0x8f7	
 other	Bell voucher		etc	https://acnhcdn.com/latest/FtrIcon/BellExchangeTicket.png	10	0x26ec	
-other	black cosmos		plants;flower;cosmos	https://acnhcdn.com/latest/FtrIcon/FlwCosmosBlack.png	10	0xb3b	
-other	black lilies		plants;flower;lilies	https://acnhcdn.com/latest/FtrIcon/FlwYuriBlack.png	10	0xbb7	
-other	black roses		plants;flower;roses	https://acnhcdn.com/latest/FtrIcon/FlwRoseBlack.png	10	0xb8b	
-other	black tulips		plants;flower;tulips	https://acnhcdn.com/latest/FtrIcon/FlwTulipBlack.png	10	0xb57	
-other	black wrapping paper		etc	https://acnhcdn.com/latest/FtrIcon/WPaperBlack.png	10	0x1e12	
+flower	black cosmos		plants;flower;cosmos	https://acnhcdn.com/latest/FtrIcon/FlwCosmosBlack.png	10	0xb3b	
+flower	black lilies		plants;flower;lilies	https://acnhcdn.com/latest/FtrIcon/FlwYuriBlack.png	10	0xbb7	
+flower	black roses		plants;flower;roses	https://acnhcdn.com/latest/FtrIcon/FlwRoseBlack.png	10	0xb8b	
+flower	black tulips		plants;flower;tulips	https://acnhcdn.com/latest/FtrIcon/FlwTulipBlack.png	10	0xb57	
+wrapping	black wrapping paper		etc	https://acnhcdn.com/latest/FtrIcon/WPaperBlack.png	10	0x1e12	
 other	blue feather		etc	https://acnhcdn.com/latest/FtrIcon/FeatherBlue.png	3	0xdd6	
-other	blue hyacinths		plants;flower;hyacinths	https://acnhcdn.com/latest/FtrIcon/FlwHyacinthBlue.png	10	0xea4	
+flower	blue hyacinths		plants;flower;hyacinths	https://acnhcdn.com/latest/FtrIcon/FlwHyacinthBlue.png	10	0xea4	
 other	blue ornament		etc	https://acnhcdn.com/latest/FtrIcon/DIYOrnamentBlue.png	30	0x1663	
-other	blue pansies		plants;flower;pansies	https://acnhcdn.com/latest/FtrIcon/FlwPansyBlue.png	10	0xb6f	
-other	blue roses		plants;flower;roses	https://acnhcdn.com/latest/FtrIcon/FlwRoseBlue.png	10	0xb8f	
-other	blue windflowers		plants;flower;windflowers	https://acnhcdn.com/latest/FtrIcon/FlwAnemonesBlue.png	10	0xe85	
-other	blue wrapping paper		etc	https://acnhcdn.com/latest/FtrIcon/WPaperBlue.png	10	0x1e0c	
-other	blue-hydrangea start		plants;bush;hydrangea	https://acnhcdn.com/latest/FtrIcon/SeedHydrangeaBlue.png	10	0xed6	
-other	bokjumeoni lucky pouch		etc	https://acnhcdn.com/latest/FtrIcon/OtoshidamaKr.png	10	0x3683	
+flower	blue pansies		plants;flower;pansies	https://acnhcdn.com/latest/FtrIcon/FlwPansyBlue.png	10	0xb6f	
+flower	blue roses		plants;flower;roses	https://acnhcdn.com/latest/FtrIcon/FlwRoseBlue.png	10	0xb8f	
+flower	blue windflowers		plants;flower;windflowers	https://acnhcdn.com/latest/FtrIcon/FlwAnemonesBlue.png	10	0xe85	
+wrapping	blue wrapping paper		etc	https://acnhcdn.com/latest/FtrIcon/WPaperBlue.png	10	0x1e0c	
+bush	blue-hydrangea start		plants;bush;hydrangea	https://acnhcdn.com/latest/FtrIcon/SeedHydrangeaBlue.png	10	0xed6	
+wrapping	bokjumeoni lucky pouch		etc	https://acnhcdn.com/latest/FtrIcon/OtoshidamaKr.png	10	0x3683	
 other	boot		etc	https://acnhcdn.com/latest/FtrIcon/TrashBoot.png	1	0xd8d	
 other	brown sugar		etc	https://acnhcdn.com/latest/FtrIcon/FlourSugarbrown.png	50	0x36ae	
-other	brown wrapping paper		etc	https://acnhcdn.com/latest/FtrIcon/WPaperBrown.png	10	0x1e10	
-other	Cancer fragment		etc	https://acnhcdn.com/latest/FtrIcon/StarpieceCancer.png	10	0x1767	
+wrapping	brown wrapping paper		etc	https://acnhcdn.com/latest/FtrIcon/WPaperBrown.png	10	0x1e10	
+fragments	Cancer fragment		etc	https://acnhcdn.com/latest/FtrIcon/StarpieceCancer.png	10	0x1767	
 other	candy		etc	https://acnhcdn.com/latest/FtrIcon/Candy.png	30	0x338d	
-other	Capricorn fragment		etc	https://acnhcdn.com/latest/FtrIcon/StarpieceCapricornus.png	10	0x1761	
-other	carrot		plants;vegetable	https://acnhcdn.com/latest/FtrIcon/Carrot.png	10	0xbe4	
-other	carrot start		plants;vegetable;carrot	https://acnhcdn.com/latest/FtrIcon/SeedCarrot.png	10	0xbe5	
-other	cedar sapling		plants;tree	https://acnhcdn.com/latest/FtrIcon/SeedCedar.png	10	0xaf0	
-other	chartreuse wrapping paper		etc	https://acnhcdn.com/latest/FtrIcon/WPaperLightGreen.png	10	0x1e06	
-other	cherry		plants;fruit	https://acnhcdn.com/latest/FtrIcon/Cherry.png	10	0x8ef	
+fragments	Capricorn fragment		etc	https://acnhcdn.com/latest/FtrIcon/StarpieceCapricornus.png	10	0x1761	
+vegetable	carrot		plants;vegetable	https://acnhcdn.com/latest/FtrIcon/Carrot.png	10	0xbe4	
+vegetable	carrot start		plants;vegetable;carrot	https://acnhcdn.com/latest/FtrIcon/SeedCarrot.png	10	0xbe5	
+tree	cedar sapling		plants;tree	https://acnhcdn.com/latest/FtrIcon/SeedCedar.png	10	0xaf0	
+wrapping	chartreuse wrapping paper		etc	https://acnhcdn.com/latest/FtrIcon/WPaperLightGreen.png	10	0x1e06	
+trees	cherry		plants;fruit	https://acnhcdn.com/latest/FtrIcon/Cherry.png	10	0x8ef	
 other	cherry-blossom petal		etc	https://acnhcdn.com/latest/FtrIcon/Sakurapetal.png	10	0x16e3	
-other	clay		etc	https://acnhcdn.com/latest/FtrIcon/DIYClay.png	30	0xc12	
-other	clump of weeds		plants	https://acnhcdn.com/latest/FtrIcon/PltWeed.png	99	0xa40	
-other	coconut		plants;fruit	https://acnhcdn.com/latest/FtrIcon/Coconut.png	10	0x8f0	
-other	conch		etc	https://acnhcdn.com/latest/FtrIcon/ShellDriftHora.png	10	0x560	
-other	coral		etc	https://acnhcdn.com/latest/FtrIcon/ShellDriftSango.png	10	0x564	
-other	cowrie		etc	https://acnhcdn.com/latest/FtrIcon/ShellDriftTakara.png	10	0x566	
+crafting materials	clay		etc	https://acnhcdn.com/latest/FtrIcon/DIYClay.png	30	0xc12	
+crafting materials	clump of weeds		plants	https://acnhcdn.com/latest/FtrIcon/PltWeed.png	99	0xa40	
+trees	coconut		plants;fruit	https://acnhcdn.com/latest/FtrIcon/Coconut.png	10	0x8f0	
+shells	conch		etc	https://acnhcdn.com/latest/FtrIcon/ShellDriftHora.png	10	0x560	
+shells	coral		etc	https://acnhcdn.com/latest/FtrIcon/ShellDriftSango.png	10	0x564	
+shells	cowrie		etc	https://acnhcdn.com/latest/FtrIcon/ShellDriftTakara.png	10	0x566	
 other	customizable phone case kit		etc	https://acnhcdn.com/latest/FtrIcon/SmartphoneCase_Remake_0_0.png	1	0x2238	
 other	customization kit		etc	https://acnhcdn.com/latest/FtrIcon/RemakeKit.png	50	0x9d1	
 other	Dream Bell exchange ticket		etc	https://acnhcdn.com/latest/FtrIcon/DreamBellExchangeTicket.png	10	0x33ac	
 other	earth egg		etc	https://acnhcdn.com/latest/FtrIcon/EggGround.png	30	0x30dd	
 other	elegant mushroom		plants	https://acnhcdn.com/latest/FtrIcon/MushSplendid.png	10	0xccc	
 other	empty can		etc	https://acnhcdn.com/latest/FtrIcon/TrashCan.png	1	0xd8a	
-other	festive wrapping paper		etc	https://acnhcdn.com/latest/FtrIcon/WPaperOrnament.png	10	0x35e0	
+wrapping	festive wrapping paper		etc	https://acnhcdn.com/latest/FtrIcon/WPaperOrnament.png	10	0x35e0	
 other	fish bait		etc	https://acnhcdn.com/latest/FtrIcon/FishBait.png	10	0x11c5	
 other	flat mushroom		plants	https://acnhcdn.com/latest/FtrIcon/MushFlat.png	10	0xccf	
 other	flour		etc	https://acnhcdn.com/latest/FtrIcon/FlourWheat.png	50	0x36aa	
 other	fossil		fossilunknown	https://acnhcdn.com/latest/FtrIcon/Fossil.png	1	0xa13	
 other	fountain firework		etc	https://acnhcdn.com/latest/FtrIcon/Fireworks.png	1	0x3332	
-other	Gemini fragment		etc	https://acnhcdn.com/latest/FtrIcon/StarpieceGemini.png	10	0x1766	
-other	giant clam		etc	https://acnhcdn.com/latest/FtrIcon/ShellDriftSyako.png	10	0x565	
-other	gift		etc	https://acnhcdn.com/latest/FtrIcon/DummyWrappingOrnament.png	1	0x35e1	
-other	glowing moss		fieldweedlight	https://acnhcdn.com/latest/FtrIcon/PltWeedLight.png	50	0x3106	
-other	gold nugget		etc	https://acnhcdn.com/latest/FtrIcon/DIYGold.png	30	0x9c9	
+fragments	Gemini fragment		etc	https://acnhcdn.com/latest/FtrIcon/StarpieceGemini.png	10	0x1766	
+shells	giant clam		etc	https://acnhcdn.com/latest/FtrIcon/ShellDriftSyako.png	10	0x565	
+crafting materials	glowing moss		fieldweedlight	https://acnhcdn.com/latest/FtrIcon/PltWeedLight.png	50	0x3106	
+crafting materials	gold nugget		etc	https://acnhcdn.com/latest/FtrIcon/DIYGold.png	30	0x9c9	
 other	gold ornament		etc	https://acnhcdn.com/latest/FtrIcon/DIYOrnamentGold.png	30	0x1664	
-other	gold roses		plants;flower;roses	https://acnhcdn.com/latest/FtrIcon/FlwRoseGold.png	10	0xb93	
-other	gold wrapping paper		etc	https://acnhcdn.com/latest/FtrIcon/WPaperGold.png	10	0x1e0f	
-other	gray wrapping paper		etc	https://acnhcdn.com/latest/FtrIcon/WPaperGray.png	10	0x1e11	
+flower	gold roses		plants;flower;roses	https://acnhcdn.com/latest/FtrIcon/FlwRoseGold.png	10	0xb93	
+wrapping	gold wrapping paper		etc	https://acnhcdn.com/latest/FtrIcon/WPaperGold.png	10	0x1e0f	
+wrapping	gray wrapping paper		etc	https://acnhcdn.com/latest/FtrIcon/WPaperGray.png	10	0x1e11	
 other	green feather		etc	https://acnhcdn.com/latest/FtrIcon/FeatherGreen.png	3	0xdd7	
-other	green mums		plants;flower;mums	https://acnhcdn.com/latest/FtrIcon/FlwMumGreen.png	10	0x1437	
-other	green pumpkin		plants;vegetable	https://acnhcdn.com/latest/FtrIcon/SquashGreen.png	10	0x11af	
-other	green wrapping paper		etc	https://acnhcdn.com/latest/FtrIcon/WPaperGreen.png	10	0x1e07	
-other	gyroid fragment		haniwapiece	https://acnhcdn.com/latest/FtrIcon/HaniwaPiece.png	1	0x38d2	
-other	hardwood		etc	https://acnhcdn.com/latest/FtrIcon/DIYWoodHard.png	30	0xad1	
+flower	green mums		plants;flower;mums	https://acnhcdn.com/latest/FtrIcon/FlwMumGreen.png	10	0x1437	
+vegetable	green pumpkin		plants;vegetable	https://acnhcdn.com/latest/FtrIcon/SquashGreen.png	10	0x11af	
+wrapping	green wrapping paper		etc	https://acnhcdn.com/latest/FtrIcon/WPaperGreen.png	10	0x1e07	
+gyroids	gyroid fragment		haniwapiece	https://acnhcdn.com/latest/FtrIcon/HaniwaPiece.png	1	0x38d2	
+crafting materials	hardwood		etc	https://acnhcdn.com/latest/FtrIcon/DIYWoodHard.png	30	0xad1	
 other	heart crystal		etc	https://acnhcdn.com/latest/FtrIcon/Love.png	30	0x3102	
-other	holly start		plants;bush;holly	https://acnhcdn.com/latest/FtrIcon/SeedHolly.png	10	0xbd0	
-other	iron nugget		etc	https://acnhcdn.com/latest/FtrIcon/DIYIron.png	30	0x9cf	
+bush	holly start		plants;bush;holly	https://acnhcdn.com/latest/FtrIcon/SeedHolly.png	10	0xbd0	
+crafting materials	iron nugget		etc	https://acnhcdn.com/latest/FtrIcon/DIYIron.png	30	0x9cf	
 other	large snowflake		etc	https://acnhcdn.com/latest/FtrIcon/SnowCrystalLarge.png	10	0xdd4	
-other	large star fragment		etc	https://acnhcdn.com/latest/FtrIcon/StarpieceRare.png	10	0x1760	
+fragments	large star fragment		etc	https://acnhcdn.com/latest/FtrIcon/StarpieceRare.png	10	0x1760	
 other	leaf egg		etc	https://acnhcdn.com/latest/FtrIcon/EggLeaf.png	30	0x30df	
-other	Leo fragment		etc	https://acnhcdn.com/latest/FtrIcon/StarpieceLeo.png	10	0x1768	
-other	Libra fragment		etc	https://acnhcdn.com/latest/FtrIcon/StarpieceLibra.png	10	0x176a	
-other	light-blue wrapping paper		etc	https://acnhcdn.com/latest/FtrIcon/WPaperLightBlue.png	10	0x1e09	
+fragments	Leo fragment		etc	https://acnhcdn.com/latest/FtrIcon/StarpieceLeo.png	10	0x1768	
+fragments	Libra fragment		etc	https://acnhcdn.com/latest/FtrIcon/StarpieceLibra.png	10	0x176a	
+wrapping	light-blue wrapping paper		etc	https://acnhcdn.com/latest/FtrIcon/WPaperLightBlue.png	10	0x1e09	
 other	lollipop		etc	https://acnhcdn.com/latest/FtrIcon/Lollipop.png	30	0x338c	
-other	lucky red envelope		etc	https://acnhcdn.com/latest/FtrIcon/OtoshidamaCh.png	10	0x3682	
-other	manila clam		etc	https://acnhcdn.com/latest/FtrIcon/FtrShellFishAsari.png	1	0xa07	
+wrapping	lucky red envelope		etc	https://acnhcdn.com/latest/FtrIcon/OtoshidamaCh.png	10	0x3682	
+shells	manila clam		etc	https://acnhcdn.com/latest/FtrIcon/FtrShellFishAsari.png	1	0xa07	
 other	maple leaf		etc	https://acnhcdn.com/latest/FtrIcon/AutumnLeaf.png	10	0x1cce	
 other	medicine		etc	https://acnhcdn.com/latest/FtrIcon/ItemMedicine.png	10	0xad9	
-other	mint wrapping paper		etc	https://acnhcdn.com/latest/FtrIcon/WPaperMint.png	10	0x1e08	
-other	navy wrapping paper		etc	https://acnhcdn.com/latest/FtrIcon/WPaperNavy.png	10	0x1e0b	
+wrapping	mint wrapping paper		etc	https://acnhcdn.com/latest/FtrIcon/WPaperMint.png	10	0x1e08	
+wrapping	navy wrapping paper		etc	https://acnhcdn.com/latest/FtrIcon/WPaperNavy.png	10	0x1e0b	
 other	Nook Miles Ticket		etc	https://acnhcdn.com/latest/FtrIcon/MilePlaneTicket.png	10	0x16db	
 other	old tire		etc	https://acnhcdn.com/latest/FtrIcon/TrashTire.png	1	0xd8e	
-other	orange		plants;fruit	https://acnhcdn.com/latest/FtrIcon/Orange.png	10	0x8a6	
-other	orange cosmos		plants;flower;cosmos	https://acnhcdn.com/latest/FtrIcon/FlwCosmosOrange.png	10	0xb37	
-other	orange hyacinths		plants;flower;hyacinths	https://acnhcdn.com/latest/FtrIcon/FlwHyacinthOrange.png	10	0xe9d	
-other	orange lilies		plants;flower;lilies	https://acnhcdn.com/latest/FtrIcon/FlwYuriOrange.png	10	0xbb3	
-other	orange pansies		plants;flower;pansies	https://acnhcdn.com/latest/FtrIcon/FlwPansyRedYellow.png	10	0xb67	
-other	orange pumpkin		plants;vegetable	https://acnhcdn.com/latest/FtrIcon/SquashOrange.png	10	0x11ad	
-other	orange roses		plants;flower;roses	https://acnhcdn.com/latest/FtrIcon/FlwRoseOrange.png	10	0xb83	
-other	orange tulips		plants;flower;tulips	https://acnhcdn.com/latest/FtrIcon/FlwTulipOrange.png	10	0xb4f	
-other	orange windflowers		plants;flower;windflowers	https://acnhcdn.com/latest/FtrIcon/FlwAnemonesOrange.png	10	0xe81	
-other	orange wrapping paper		etc	https://acnhcdn.com/latest/FtrIcon/WPaperOrange.png	10	0x1e05	
-other	orange-tea-olive start		plants;bush;teaolive	https://acnhcdn.com/latest/FtrIcon/SeedBushOsmathusOrange.png	10	0x30c0	
-other	orange-windflower bag		plants	https://acnhcdn.com/latest/FtrIcon/SeedAnemonesOrange.png	10	0xe82	
-other	otoshidama envelope		etc	https://acnhcdn.com/latest/FtrIcon/OtoshidamaJp.png	10	0x3684	
+trees	orange		plants;fruit	https://acnhcdn.com/latest/FtrIcon/Orange.png	10	0x8a6	
+flower	orange cosmos		plants;flower;cosmos	https://acnhcdn.com/latest/FtrIcon/FlwCosmosOrange.png	10	0xb37	
+flower	orange hyacinths		plants;flower;hyacinths	https://acnhcdn.com/latest/FtrIcon/FlwHyacinthOrange.png	10	0xe9d	
+flower	orange lilies		plants;flower;lilies	https://acnhcdn.com/latest/FtrIcon/FlwYuriOrange.png	10	0xbb3	
+flower	orange pansies		plants;flower;pansies	https://acnhcdn.com/latest/FtrIcon/FlwPansyRedYellow.png	10	0xb67	
+vegetable	orange pumpkin		plants;vegetable	https://acnhcdn.com/latest/FtrIcon/SquashOrange.png	10	0x11ad	
+flower	orange roses		plants;flower;roses	https://acnhcdn.com/latest/FtrIcon/FlwRoseOrange.png	10	0xb83	
+flower	orange tulips		plants;flower;tulips	https://acnhcdn.com/latest/FtrIcon/FlwTulipOrange.png	10	0xb4f	
+flower	orange windflowers		plants;flower;windflowers	https://acnhcdn.com/latest/FtrIcon/FlwAnemonesOrange.png	10	0xe81	
+wrapping	orange wrapping paper		etc	https://acnhcdn.com/latest/FtrIcon/WPaperOrange.png	10	0x1e05	
+bush	orange-tea-olive start		plants;bush;teaolive	https://acnhcdn.com/latest/FtrIcon/SeedBushOsmathusOrange.png	10	0x30c0	
+flower	orange-windflower bag		plants	https://acnhcdn.com/latest/FtrIcon/SeedAnemonesOrange.png	10	0xe82	
+wrapping	otoshidama envelope		etc	https://acnhcdn.com/latest/FtrIcon/OtoshidamaJp.png	10	0x3684	
 other	Paradise Planning case		etc	https://acnhcdn.com/latest/FtrIcon/SmartphoneCaseOtg.png	1	0x39e4	
-other	peach		plants;fruit	https://acnhcdn.com/latest/FtrIcon/Peach.png	10	0x8ee	
-other	pear		plants;fruit	https://acnhcdn.com/latest/FtrIcon/Pear.png	10	0x8ed	
+trees	peach		plants;fruit	https://acnhcdn.com/latest/FtrIcon/Peach.png	10	0x8ee	
+trees	pear		plants;fruit	https://acnhcdn.com/latest/FtrIcon/Pear.png	10	0x8ed	
 other	pearl		etc	https://acnhcdn.com/latest/FtrIcon/Pearl.png	30	0x32a8	
 other	pine cone		etc	https://acnhcdn.com/latest/FtrIcon/DIYPinecone.png	30	0x1660	
-other	pink cosmos		plants;flower;cosmos	https://acnhcdn.com/latest/FtrIcon/FlwCosmosPink.png	10	0xb33	
-other	pink hyacinths		plants;flower;hyacinths	https://acnhcdn.com/latest/FtrIcon/FlwHyacinthPink.png	10	0xe9a	
-other	pink lilies		plants;flower;lilies	https://acnhcdn.com/latest/FtrIcon/FlwYuriPink.png	10	0xbaf	
-other	pink mums		plants;flower;mums	https://acnhcdn.com/latest/FtrIcon/FlwMumPink.png	10	0xeb5	
-other	pink roses		plants;flower;roses	https://acnhcdn.com/latest/FtrIcon/FlwRosePink.png	10	0xb7f	
-other	pink tulips		plants;flower;tulips	https://acnhcdn.com/latest/FtrIcon/FlwTulipPink.png	10	0xb4b	
-other	pink windflowers		plants;flower;windflowers	https://acnhcdn.com/latest/FtrIcon/FlwAnemonesPink.png	10	0xe88	
-other	pink wrapping paper		etc	https://acnhcdn.com/latest/FtrIcon/WPaperPink.png	10	0x1e04	
-other	pink-azalea start		plants;bush;azalea	https://acnhcdn.com/latest/FtrIcon/SeedAzaleaPink.png	10	0xeca	
-other	pink-camellia start		plants;bush;camellia	https://acnhcdn.com/latest/FtrIcon/SeedBushCamelliaPink.png	10	0x30ca	
-other	pink-hydrangea start		plants;bush;hydrangea	https://acnhcdn.com/latest/FtrIcon/SeedHydrangeaPink.png	10	0xed2	
-other	pink-plumeria start		plants;bush;plumeria	https://acnhcdn.com/latest/FtrIcon/SeedBushPlumeriaPink.png	10	0x33ce	
-other	Pisces fragment		etc	https://acnhcdn.com/latest/FtrIcon/StarpiecePisces.png	10	0x1763	
+flower	pink cosmos		plants;flower;cosmos	https://acnhcdn.com/latest/FtrIcon/FlwCosmosPink.png	10	0xb33	
+flower	pink hyacinths		plants;flower;hyacinths	https://acnhcdn.com/latest/FtrIcon/FlwHyacinthPink.png	10	0xe9a	
+flower	pink lilies		plants;flower;lilies	https://acnhcdn.com/latest/FtrIcon/FlwYuriPink.png	10	0xbaf	
+flower	pink mums		plants;flower;mums	https://acnhcdn.com/latest/FtrIcon/FlwMumPink.png	10	0xeb5	
+flower	pink roses		plants;flower;roses	https://acnhcdn.com/latest/FtrIcon/FlwRosePink.png	10	0xb7f	
+flower	pink tulips		plants;flower;tulips	https://acnhcdn.com/latest/FtrIcon/FlwTulipPink.png	10	0xb4b	
+flower	pink windflowers		plants;flower;windflowers	https://acnhcdn.com/latest/FtrIcon/FlwAnemonesPink.png	10	0xe88	
+wrapping	pink wrapping paper		etc	https://acnhcdn.com/latest/FtrIcon/WPaperPink.png	10	0x1e04	
+bush	pink-azalea start		plants;bush;azalea	https://acnhcdn.com/latest/FtrIcon/SeedAzaleaPink.png	10	0xeca	
+bush	pink-camellia start		plants;bush;camellia	https://acnhcdn.com/latest/FtrIcon/SeedBushCamelliaPink.png	10	0x30ca	
+bush	pink-hydrangea start		plants;bush;hydrangea	https://acnhcdn.com/latest/FtrIcon/SeedHydrangeaPink.png	10	0xed2	
+bush	pink-plumeria start		plants;bush;plumeria	https://acnhcdn.com/latest/FtrIcon/SeedBushPlumeriaPink.png	10	0x33ce	
+fragments	Pisces fragment		etc	https://acnhcdn.com/latest/FtrIcon/StarpiecePisces.png	10	0x1763	
 other	pitfall seed		etc	https://acnhcdn.com/latest/FtrIcon/PitfallSeed.png	10	0xa12	
 other	Pocket Camp phone case		etc	https://acnhcdn.com/latest/FtrIcon/SmartphoneCaseComp.png	1	0x347f	
-other	potato		plants;vegetable	https://acnhcdn.com/latest/FtrIcon/Potato.png	10	0xbdf	
-other	present (black)		etc	https://acnhcdn.com/latest/FtrIcon/DummyWrappingBlack.png	1	0x1e22	
-other	present (blue)		etc	https://acnhcdn.com/latest/FtrIcon/DummyWrappingBlue.png	1	0x1e1c	
-other	present (brown)		etc	https://acnhcdn.com/latest/FtrIcon/DummyWrappingBrown.png	1	0x1e20	
-other	present (chartreuse)		etc	https://acnhcdn.com/latest/FtrIcon/DummyWrappingLightGreen.png	1	0x1e16	
-other	present (gold)		etc	https://acnhcdn.com/latest/FtrIcon/DummyWrappingGold.png	1	0x1e1f	
-other	present (gray)		etc	https://acnhcdn.com/latest/FtrIcon/DummyWrappingGary.png	1	0x1e21	
-other	present (green)		etc	https://acnhcdn.com/latest/FtrIcon/DummyWrappingGreen.png	1	0x1e17	
-other	present (light-blue)		etc	https://acnhcdn.com/latest/FtrIcon/DummyWrappingLightBlue.png	1	0x1e19	
-other	present (mint)		etc	https://acnhcdn.com/latest/FtrIcon/DummyWrappingMint.png	1	0x1e18	
-other	present (navy)		etc	https://acnhcdn.com/latest/FtrIcon/DummyWrappingNavy.png	1	0x1e1b	
-other	present (orange)		etc	https://acnhcdn.com/latest/FtrIcon/DummyWrappingOrange.png	1	0x1e15	
-other	present (pink)		etc	https://acnhcdn.com/latest/FtrIcon/DummyWrappingPink.png	1	0x1e14	
-other	present (purple)		etc	https://acnhcdn.com/latest/FtrIcon/DummyWrappingPurple.png	1	0x1e1a	
-other	present (red)		etc	https://acnhcdn.com/latest/FtrIcon/DummyWrappingRed.png	1	0x1e1e	
-other	present (white)		etc	https://acnhcdn.com/latest/FtrIcon/DummyWrappingWhite.png	1	0x1e1d	
-other	present (yellow)		etc	https://acnhcdn.com/latest/FtrIcon/DummyWrappingYellow.png	1	0x1e13	
-other	pumpkin start		plants;vegetable;pumpkin	https://acnhcdn.com/latest/FtrIcon/SeedSquash.png	10	0x33ab	
+vegetable	potato		plants;vegetable	https://acnhcdn.com/latest/FtrIcon/Potato.png	10	0xbdf	
+vegetable	pumpkin start		plants;vegetable;pumpkin	https://acnhcdn.com/latest/FtrIcon/SeedSquash.png	10	0x33ab	
 other	purple feather		etc	https://acnhcdn.com/latest/FtrIcon/FeatherPurple.png	3	0xdd9	
-other	purple hyacinths		plants;flower;hyacinths	https://acnhcdn.com/latest/FtrIcon/FlwHyacinthPurple.png	10	0xea7	
-other	purple mums		plants;flower;mums	https://acnhcdn.com/latest/FtrIcon/FlwMumPurple.png	10	0xeb2	
-other	purple pansies		plants;flower;pansies	https://acnhcdn.com/latest/FtrIcon/FlwPansyPurple.png	10	0xb6b	
-other	purple roses		plants;flower;roses	https://acnhcdn.com/latest/FtrIcon/FlwRosePurple.png	10	0xb87	
-other	purple tulips		plants;flower;tulips	https://acnhcdn.com/latest/FtrIcon/FlwTulipPurple.png	10	0xb53	
-other	purple windflowers		plants;flower;windflowers	https://acnhcdn.com/latest/FtrIcon/FlwAnemonesPurple.png	10	0xe8f	
-other	purple wrapping paper		etc	https://acnhcdn.com/latest/FtrIcon/WPaperPurple.png	10	0x1e0a	
+flower	purple hyacinths		plants;flower;hyacinths	https://acnhcdn.com/latest/FtrIcon/FlwHyacinthPurple.png	10	0xea7	
+flower	purple mums		plants;flower;mums	https://acnhcdn.com/latest/FtrIcon/FlwMumPurple.png	10	0xeb2	
+flower	purple pansies		plants;flower;pansies	https://acnhcdn.com/latest/FtrIcon/FlwPansyPurple.png	10	0xb6b	
+flower	purple roses		plants;flower;roses	https://acnhcdn.com/latest/FtrIcon/FlwRosePurple.png	10	0xb87	
+flower	purple tulips		plants;flower;tulips	https://acnhcdn.com/latest/FtrIcon/FlwTulipPurple.png	10	0xb53	
+flower	purple windflowers		plants;flower;windflowers	https://acnhcdn.com/latest/FtrIcon/FlwAnemonesPurple.png	10	0xe8f	
+wrapping	purple wrapping paper		etc	https://acnhcdn.com/latest/FtrIcon/WPaperPurple.png	10	0x1e0a	
 other	rainbow feather		etc	https://acnhcdn.com/latest/FtrIcon/FeatherRainbow.png	1	0xddc	
 other	rare mushroom		plants	https://acnhcdn.com/latest/FtrIcon/MushRare.png	10	0xcd0	
-other	red cosmos		plants;flower;cosmos	https://acnhcdn.com/latest/FtrIcon/FlwCosmosRed.png	10	0x900	
+flower	red cosmos		plants;flower;cosmos	https://acnhcdn.com/latest/FtrIcon/FlwCosmosRed.png	10	0x900	
 other	red feather		etc	https://acnhcdn.com/latest/FtrIcon/FeatherRed.png	3	0xdd5	
-other	red hyacinths		plants;flower;hyacinths	https://acnhcdn.com/latest/FtrIcon/FlwHyacinthRed.png	10	0xea0	
-other	red lilies		plants;flower;lilies	https://acnhcdn.com/latest/FtrIcon/FlwYuriRed.png	10	0xba7	
-other	red mums		plants;flower;mums	https://acnhcdn.com/latest/FtrIcon/FlwMumRed.png	10	0xeb8	
+flower	red hyacinths		plants;flower;hyacinths	https://acnhcdn.com/latest/FtrIcon/FlwHyacinthRed.png	10	0xea0	
+flower	red lilies		plants;flower;lilies	https://acnhcdn.com/latest/FtrIcon/FlwYuriRed.png	10	0xba7	
+flower	red mums		plants;flower;mums	https://acnhcdn.com/latest/FtrIcon/FlwMumRed.png	10	0xeb8	
 other	red ornament		etc	https://acnhcdn.com/latest/FtrIcon/DIYOrnamentRed.png	30	0x1662	
-other	red pansies		plants;flower;pansies	https://acnhcdn.com/latest/FtrIcon/FlwPansyRed.png	10	0xb5f	
-other	red roses		plants;flower;roses	https://acnhcdn.com/latest/FtrIcon/FlwRoseRed.png	10	0xb77	
-other	red tulips		plants;flower;tulips	https://acnhcdn.com/latest/FtrIcon/FlwTulipRed.png	10	0xb43	
-other	red windflowers		plants;flower;windflowers	https://acnhcdn.com/latest/FtrIcon/FlwAnemonesRed.png	10	0xe8b	
-other	red wrapping paper		etc	https://acnhcdn.com/latest/FtrIcon/WPaperRed.png	10	0x1e0e	
-other	red-camellia start		plants;bush;camellia	https://acnhcdn.com/latest/FtrIcon/SeedBushCamelliaRed.png	10	0x30c7	
-other	red-cosmos bag		plants	https://acnhcdn.com/latest/FtrIcon/SeedCosmosRed.png	10	0xa42	
-other	red-hibiscus start		plants;bush;hibiscus	https://acnhcdn.com/latest/FtrIcon/SeedHibiscusRed.png	10	0xbcb	
-other	red-hyacinth bag		plants	https://acnhcdn.com/latest/FtrIcon/SeedHyacinthRed.png	10	0xea1	
-other	red-lily bag		plants	https://acnhcdn.com/latest/FtrIcon/SeedYuriRed.png	10	0xba8	
-other	red-mum bag		plants	https://acnhcdn.com/latest/FtrIcon/SeedMumRed.png	10	0xeb9	
-other	red-pansy bag		plants	https://acnhcdn.com/latest/FtrIcon/SeedPansyRed.png	10	0xb60	
-other	red-rose bag		plants	https://acnhcdn.com/latest/FtrIcon/SeedRoseRed.png	10	0xb78	
-other	red-tulip bag		plants	https://acnhcdn.com/latest/FtrIcon/SeedTulipRed.png	10	0xb44	
-other	red-windflower bag		plants	https://acnhcdn.com/latest/FtrIcon/SeedAnemonesRed.png	10	0xe8c	
+flower	red pansies		plants;flower;pansies	https://acnhcdn.com/latest/FtrIcon/FlwPansyRed.png	10	0xb5f	
+flower	red roses		plants;flower;roses	https://acnhcdn.com/latest/FtrIcon/FlwRoseRed.png	10	0xb77	
+flower	red tulips		plants;flower;tulips	https://acnhcdn.com/latest/FtrIcon/FlwTulipRed.png	10	0xb43	
+flower	red windflowers		plants;flower;windflowers	https://acnhcdn.com/latest/FtrIcon/FlwAnemonesRed.png	10	0xe8b	
+wrapping	red wrapping paper		etc	https://acnhcdn.com/latest/FtrIcon/WPaperRed.png	10	0x1e0e	
+bush	red-camellia start		plants;bush;camellia	https://acnhcdn.com/latest/FtrIcon/SeedBushCamelliaRed.png	10	0x30c7	
+flower	red-cosmos bag		plants	https://acnhcdn.com/latest/FtrIcon/SeedCosmosRed.png	10	0xa42	
+bush	red-hibiscus start		plants;bush;hibiscus	https://acnhcdn.com/latest/FtrIcon/SeedHibiscusRed.png	10	0xbcb	
+flower	red-hyacinth bag		plants	https://acnhcdn.com/latest/FtrIcon/SeedHyacinthRed.png	10	0xea1	
+flower	red-lily bag		plants	https://acnhcdn.com/latest/FtrIcon/SeedYuriRed.png	10	0xba8	
+flower	red-mum bag		plants	https://acnhcdn.com/latest/FtrIcon/SeedMumRed.png	10	0xeb9	
+flower	red-pansy bag		plants	https://acnhcdn.com/latest/FtrIcon/SeedPansyRed.png	10	0xb60	
+flower	red-rose bag		plants	https://acnhcdn.com/latest/FtrIcon/SeedRoseRed.png	10	0xb78	
+flower	red-tulip bag		plants	https://acnhcdn.com/latest/FtrIcon/SeedTulipRed.png	10	0xb44	
+flower	red-windflower bag		plants	https://acnhcdn.com/latest/FtrIcon/SeedAnemonesRed.png	10	0xe8c	
 other	round mushroom		plants	https://acnhcdn.com/latest/FtrIcon/MushRound.png	10	0xccd	
 other	rusted part		etc	https://acnhcdn.com/latest/FtrIcon/JohnnyQuestDust1.png	10	0x955	
-other	Sagittarius fragment		etc	https://acnhcdn.com/latest/FtrIcon/StarpieceSagittarius.png	10	0x176c	
+fragments	Sagittarius fragment		etc	https://acnhcdn.com/latest/FtrIcon/StarpieceSagittarius.png	10	0x176c	
 other	Saharah Ticket		etc	https://acnhcdn.com/latest/FtrIcon/RollanTicket.png	5	0x242d	
-other	sand dollar		etc	https://acnhcdn.com/latest/FtrIcon/ShellDriftSanddollar.png	10	0x563	
-other	sapling		plants;tree	https://acnhcdn.com/latest/FtrIcon/SeedOak.png	10	0xaea	
-other	Scorpius fragment		etc	https://acnhcdn.com/latest/FtrIcon/StarpieceScorpio.png	10	0x176b	
-other	sea snail		etc	https://acnhcdn.com/latest/FtrIcon/ShellDriftEbisu.png	10	0x55e	
-other	seed potato		plants;vegetable;potato	https://acnhcdn.com/latest/FtrIcon/SeedPotato.png	10	0xbe0	
+shells	sand dollar		etc	https://acnhcdn.com/latest/FtrIcon/ShellDriftSanddollar.png	10	0x563	
+tree	sapling		plants;tree	https://acnhcdn.com/latest/FtrIcon/SeedOak.png	10	0xaea	
+fragments	Scorpius fragment		etc	https://acnhcdn.com/latest/FtrIcon/StarpieceScorpio.png	10	0x176b	
+shells	sea snail		etc	https://acnhcdn.com/latest/FtrIcon/ShellDriftEbisu.png	10	0x55e	
+vegetable	seed potato		plants;vegetable;potato	https://acnhcdn.com/latest/FtrIcon/SeedPotato.png	10	0xbe0	
 other	skinny mushroom		plants	https://acnhcdn.com/latest/FtrIcon/MushSlender.png	10	0xcce	
 other	sky egg		etc	https://acnhcdn.com/latest/FtrIcon/EggSky.png	30	0x30e1	
 other	snowflake		etc	https://acnhcdn.com/latest/FtrIcon/SnowCrystal.png	10	0xdd3	
-other	softwood		etc	https://acnhcdn.com/latest/FtrIcon/DIYWoodSoft.png	30	0xacf	
+crafting materials	softwood		etc	https://acnhcdn.com/latest/FtrIcon/DIYWoodSoft.png	30	0xacf	
 other	souvenir chocolates		etc	https://acnhcdn.com/latest/FtrIcon/SouvenirChocolate.png	10	0x3330	
-other	spoiled turnips		etc	https://acnhcdn.com/latest/FtrIcon/Kabu_Spoil.png	1	0xa52	
-other	star fragment		etc	https://acnhcdn.com/latest/FtrIcon/Starpiece.png	10	0x175f	
-other	stone		etc	https://acnhcdn.com/latest/FtrIcon/DIYStone.png	30	0x9c6	
+fragments	star fragment		etc	https://acnhcdn.com/latest/FtrIcon/Starpiece.png	10	0x175f	
+crafting materials	stone		etc	https://acnhcdn.com/latest/FtrIcon/DIYStone.png	30	0x9c6	
 other	stone egg		etc	https://acnhcdn.com/latest/FtrIcon/EggRock.png	30	0x30de	
 other	sugar		etc	https://acnhcdn.com/latest/FtrIcon/FlourSugar.png	50	0x36ad	
-other	sugarcane		plants;vegetable	https://acnhcdn.com/latest/FtrIcon/SugarCane.png	10	0xbda	
-other	sugarcane start		plants;vegetable;sugarcane	https://acnhcdn.com/latest/FtrIcon/SeedSugarCane.png	10	0xbdb	
-other	summer shell		etc	https://acnhcdn.com/latest/FtrIcon/ShellDriftSummer.png	10	0x175e	
+vegetable	sugarcane		plants;vegetable	https://acnhcdn.com/latest/FtrIcon/SugarCane.png	10	0xbda	
+vegetable	sugarcane start		plants;vegetable;sugarcane	https://acnhcdn.com/latest/FtrIcon/SeedSugarCane.png	10	0xbdb	
+shells	summer shell		etc	https://acnhcdn.com/latest/FtrIcon/ShellDriftSummer.png	10	0x175e	
 other	tailors ticket		etc	https://acnhcdn.com/latest/FtrIcon/TailorTicket.png	10	0x172c	
-other	Taurus fragment		etc	https://acnhcdn.com/latest/FtrIcon/StarpieceTaurus.png	10	0x1765	
-other	tomato		plants;vegetable	https://acnhcdn.com/latest/FtrIcon/Tomato.png	10	0xa0a	
-other	tomato start		plants;vegetable;tomato	https://acnhcdn.com/latest/FtrIcon/SeedTomato.png	10	0xa59	
-other	tree branch		etc	https://acnhcdn.com/latest/FtrIcon/DIYBranch.png	30	0x9c4	
-other	turnips		etc	https://acnhcdn.com/latest/FtrIcon/PhotoStudioKabu.png	1000	0x1e36	
+fragments	Taurus fragment		etc	https://acnhcdn.com/latest/FtrIcon/StarpieceTaurus.png	10	0x1765	
+vegetable	tomato		plants;vegetable	https://acnhcdn.com/latest/FtrIcon/Tomato.png	10	0xa0a	
+vegetable	tomato start		plants;vegetable;tomato	https://acnhcdn.com/latest/FtrIcon/SeedTomato.png	10	0xa59	
+crafting materials	tree branch		etc	https://acnhcdn.com/latest/FtrIcon/DIYBranch.png	30	0x9c4	
 other	used fountain firework		etc	https://acnhcdn.com/latest/FtrIcon/Cinder.png	1	0x3333	
-other	venus comb		etc	https://acnhcdn.com/latest/FtrIcon/ShellDriftHone.png	10	0x55f	
-other	vine		fieldvine	https://acnhcdn.com/latest/FtrIcon/PltVine.png	30	0x3107	
-other	Virgo fragment		etc	https://acnhcdn.com/latest/FtrIcon/StarpieceVirgo.png	10	0x1769	
-other	wasp nest		etc	https://acnhcdn.com/latest/FtrIcon/Honeycomb.png	10	0xcbf	
+shells	venus comb		etc	https://acnhcdn.com/latest/FtrIcon/ShellDriftHone.png	10	0x55f	
+crafting materials	vine		fieldvine	https://acnhcdn.com/latest/FtrIcon/PltVine.png	30	0x3107	
+fragments	Virgo fragment		etc	https://acnhcdn.com/latest/FtrIcon/StarpieceVirgo.png	10	0x1769	
+crafting materials	wasp nest		etc	https://acnhcdn.com/latest/FtrIcon/Honeycomb.png	10	0xcbf	
 other	water egg		etc	https://acnhcdn.com/latest/FtrIcon/EggFish.png	30	0x30e2	
-other	wheat		plants;vegetable	https://acnhcdn.com/latest/FtrIcon/Wheat.png	10	0xbd5	
-other	wheat start		plants;vegetable;wheat	https://acnhcdn.com/latest/FtrIcon/SeedWheat.png	10	0xbd6	
-other	white cosmos		plants;flower;cosmos	https://acnhcdn.com/latest/FtrIcon/FlwCosmosWhite.png	10	0x901	
-other	white hyacinths		plants;flower;hyacinths	https://acnhcdn.com/latest/FtrIcon/FlwHyacinthWhite.png	10	0xe92	
-other	white lilies		plants;flower;lilies	https://acnhcdn.com/latest/FtrIcon/FlwYuriWhite.png	10	0xba3	
-other	white mums		plants;flower;mums	https://acnhcdn.com/latest/FtrIcon/FlwMumWhite.png	10	0xeaa	
-other	white pansies		plants;flower;pansies	https://acnhcdn.com/latest/FtrIcon/FlwPansyWhite.png	10	0xb5b	
-other	white pumpkin		plants;vegetable	https://acnhcdn.com/latest/FtrIcon/SquashWhite.png	10	0x11b0	
-other	white roses		plants;flower;roses	https://acnhcdn.com/latest/FtrIcon/FlwRoseWhite.png	10	0xb73	
-other	white tulips		plants;flower;tulips	https://acnhcdn.com/latest/FtrIcon/FlwTulipWhite.png	10	0xb3f	
-other	white windflowers		plants;flower;windflowers	https://acnhcdn.com/latest/FtrIcon/FlwAnemonesWhite.png	10	0xe7d	
-other	white wrapping paper		etc	https://acnhcdn.com/latest/FtrIcon/WPaperWhite.png	10	0x1e0d	
-other	white-azalea start		plants;bush;azalea	https://acnhcdn.com/latest/FtrIcon/SeedAzaleaWhite.png	10	0xb04	
-other	white-cosmos bag		plants	https://acnhcdn.com/latest/FtrIcon/SeedCosmosWhite.png	10	0xa45	
-other	white-hyacinth bag		plants	https://acnhcdn.com/latest/FtrIcon/SeedHyacinthWhite.png	10	0xe93	
-other	white-lily bag		plants	https://acnhcdn.com/latest/FtrIcon/SeedYuriWhite.png	10	0xba4	
-other	white-mum bag		plants	https://acnhcdn.com/latest/FtrIcon/SeedMumWhite.png	10	0xeab	
-other	white-pansy bag		plants	https://acnhcdn.com/latest/FtrIcon/SeedPansyWhite.png	10	0xb5c	
-other	white-plumeria start		plants;bush;plumeria	https://acnhcdn.com/latest/FtrIcon/SeedBushPlumeriaWhite.png	10	0x3424	
-other	white-rose bag		plants	https://acnhcdn.com/latest/FtrIcon/SeedRoseWhite.png	10	0xb74	
-other	white-tulip bag		plants	https://acnhcdn.com/latest/FtrIcon/SeedTulipWhite.png	10	0xb40	
-other	white-windflower bag		plants	https://acnhcdn.com/latest/FtrIcon/SeedAnemonesWhite.png	10	0xe7e	
+vegetable	wheat		plants;vegetable	https://acnhcdn.com/latest/FtrIcon/Wheat.png	10	0xbd5	
+vegetable	wheat start		plants;vegetable;wheat	https://acnhcdn.com/latest/FtrIcon/SeedWheat.png	10	0xbd6	
+flower	white cosmos		plants;flower;cosmos	https://acnhcdn.com/latest/FtrIcon/FlwCosmosWhite.png	10	0x901	
+flower	white hyacinths		plants;flower;hyacinths	https://acnhcdn.com/latest/FtrIcon/FlwHyacinthWhite.png	10	0xe92	
+flower	white lilies		plants;flower;lilies	https://acnhcdn.com/latest/FtrIcon/FlwYuriWhite.png	10	0xba3	
+flower	white mums		plants;flower;mums	https://acnhcdn.com/latest/FtrIcon/FlwMumWhite.png	10	0xeaa	
+flower	white pansies		plants;flower;pansies	https://acnhcdn.com/latest/FtrIcon/FlwPansyWhite.png	10	0xb5b	
+vegetable	white pumpkin		plants;vegetable	https://acnhcdn.com/latest/FtrIcon/SquashWhite.png	10	0x11b0	
+flower	white roses		plants;flower;roses	https://acnhcdn.com/latest/FtrIcon/FlwRoseWhite.png	10	0xb73	
+flower	white tulips		plants;flower;tulips	https://acnhcdn.com/latest/FtrIcon/FlwTulipWhite.png	10	0xb3f	
+flower	white windflowers		plants;flower;windflowers	https://acnhcdn.com/latest/FtrIcon/FlwAnemonesWhite.png	10	0xe7d	
+wrapping	white wrapping paper		etc	https://acnhcdn.com/latest/FtrIcon/WPaperWhite.png	10	0x1e0d	
+bush	white-azalea start		plants;bush;azalea	https://acnhcdn.com/latest/FtrIcon/SeedAzaleaWhite.png	10	0xb04	
+flower	white-cosmos bag		plants	https://acnhcdn.com/latest/FtrIcon/SeedCosmosWhite.png	10	0xa45	
+flower	white-hyacinth bag		plants	https://acnhcdn.com/latest/FtrIcon/SeedHyacinthWhite.png	10	0xe93	
+flower	white-lily bag		plants	https://acnhcdn.com/latest/FtrIcon/SeedYuriWhite.png	10	0xba4	
+flower	white-mum bag		plants	https://acnhcdn.com/latest/FtrIcon/SeedMumWhite.png	10	0xeab	
+flower	white-pansy bag		plants	https://acnhcdn.com/latest/FtrIcon/SeedPansyWhite.png	10	0xb5c	
+bush	white-plumeria start		plants;bush;plumeria	https://acnhcdn.com/latest/FtrIcon/SeedBushPlumeriaWhite.png	10	0x3424	
+flower	white-rose bag		plants	https://acnhcdn.com/latest/FtrIcon/SeedRoseWhite.png	10	0xb74	
+flower	white-tulip bag		plants	https://acnhcdn.com/latest/FtrIcon/SeedTulipWhite.png	10	0xb40	
+flower	white-windflower bag		plants	https://acnhcdn.com/latest/FtrIcon/SeedAnemonesWhite.png	10	0xe7e	
 other	whole-wheat flour		etc	https://acnhcdn.com/latest/FtrIcon/FlourWheatwhole.png	50	0x36ac	
-other	wood		etc	https://acnhcdn.com/latest/FtrIcon/DIYWoodNormal.png	30	0xad0	
+crafting materials	wood		etc	https://acnhcdn.com/latest/FtrIcon/DIYWoodNormal.png	30	0xad0	
 other	wood egg		etc	https://acnhcdn.com/latest/FtrIcon/EggForest.png	30	0x30e0	
-other	yellow cosmos		plants;flower;cosmos	https://acnhcdn.com/latest/FtrIcon/FlwCosmosYellow.png	10	0xb2f	
-other	yellow hyacinths		plants;flower;hyacinths	https://acnhcdn.com/latest/FtrIcon/FlwHyacinthYellow.png	10	0xe96	
-other	yellow lilies		plants;flower;lilies	https://acnhcdn.com/latest/FtrIcon/FlwYuriYellow.png	10	0xbab	
-other	yellow mums		plants;flower;mums	https://acnhcdn.com/latest/FtrIcon/FlwMumYellow.png	10	0xeae	
-other	yellow pansies		plants;flower;pansies	https://acnhcdn.com/latest/FtrIcon/FlwPansyYellow.png	10	0xb63	
-other	yellow pumpkin		plants;vegetable	https://acnhcdn.com/latest/FtrIcon/SquashYellow.png	10	0x11ae	
-other	yellow roses		plants;flower;roses	https://acnhcdn.com/latest/FtrIcon/FlwRoseYellow.png	10	0xb7b	
-other	yellow tulips		plants;flower;tulips	https://acnhcdn.com/latest/FtrIcon/FlwTulipYellow.png	10	0xb47	
-other	yellow wrapping paper		etc	https://acnhcdn.com/latest/FtrIcon/WPaperYellow.png	10	0x1e03	
-other	yellow-cosmos bag		plants	https://acnhcdn.com/latest/FtrIcon/SeedCosmosYellow.png	10	0xb30	
-other	yellow-hibiscus start		plants;bush;hibiscus	https://acnhcdn.com/latest/FtrIcon/SeedHibiscusYellow.png	10	0xece	
-other	yellow-hyacinth bag		plants	https://acnhcdn.com/latest/FtrIcon/SeedHyacinthYellow.png	10	0xe97	
-other	yellow-lily bag		plants	https://acnhcdn.com/latest/FtrIcon/SeedYuriYellow.png	10	0xbac	
-other	yellow-mum bag		plants	https://acnhcdn.com/latest/FtrIcon/SeedMumYellow.png	10	0xeaf	
-other	yellow-pansy bag		plants	https://acnhcdn.com/latest/FtrIcon/SeedPansyYellow.png	10	0xb64	
-other	yellow-rose bag		plants	https://acnhcdn.com/latest/FtrIcon/SeedRoseYellow.png	10	0xb7c	
-other	yellow-tea-olive start		plants;bush;teaolive	https://acnhcdn.com/latest/FtrIcon/SeedBushOsmathusYellow.png	10	0x30bc	
-other	yellow-tulip bag		plants	https://acnhcdn.com/latest/FtrIcon/SeedTulipYellow.png	10	0xb48	
-other	young spring bamboo		etc	https://acnhcdn.com/latest/FtrIcon/DIYBambooSpring.png	30	0x1661	
+flower	yellow cosmos		plants;flower;cosmos	https://acnhcdn.com/latest/FtrIcon/FlwCosmosYellow.png	10	0xb2f	
+flower	yellow hyacinths		plants;flower;hyacinths	https://acnhcdn.com/latest/FtrIcon/FlwHyacinthYellow.png	10	0xe96	
+flower	yellow lilies		plants;flower;lilies	https://acnhcdn.com/latest/FtrIcon/FlwYuriYellow.png	10	0xbab	
+flower	yellow mums		plants;flower;mums	https://acnhcdn.com/latest/FtrIcon/FlwMumYellow.png	10	0xeae	
+flower	yellow pansies		plants;flower;pansies	https://acnhcdn.com/latest/FtrIcon/FlwPansyYellow.png	10	0xb63	
+vegetable	yellow pumpkin		plants;vegetable	https://acnhcdn.com/latest/FtrIcon/SquashYellow.png	10	0x11ae	
+flower	yellow roses		plants;flower;roses	https://acnhcdn.com/latest/FtrIcon/FlwRoseYellow.png	10	0xb7b	
+flower	yellow tulips		plants;flower;tulips	https://acnhcdn.com/latest/FtrIcon/FlwTulipYellow.png	10	0xb47	
+wrapping	yellow wrapping paper		etc	https://acnhcdn.com/latest/FtrIcon/WPaperYellow.png	10	0x1e03	
+flower	yellow-cosmos bag		plants	https://acnhcdn.com/latest/FtrIcon/SeedCosmosYellow.png	10	0xb30	
+bush	yellow-hibiscus start		plants;bush;hibiscus	https://acnhcdn.com/latest/FtrIcon/SeedHibiscusYellow.png	10	0xece	
+flower	yellow-hyacinth bag		plants	https://acnhcdn.com/latest/FtrIcon/SeedHyacinthYellow.png	10	0xe97	
+flower	yellow-lily bag		plants	https://acnhcdn.com/latest/FtrIcon/SeedYuriYellow.png	10	0xbac	
+flower	yellow-mum bag		plants	https://acnhcdn.com/latest/FtrIcon/SeedMumYellow.png	10	0xeaf	
+flower	yellow-pansy bag		plants	https://acnhcdn.com/latest/FtrIcon/SeedPansyYellow.png	10	0xb64	
+flower	yellow-rose bag		plants	https://acnhcdn.com/latest/FtrIcon/SeedRoseYellow.png	10	0xb7c	
+bush	yellow-tea-olive start		plants;bush;teaolive	https://acnhcdn.com/latest/FtrIcon/SeedBushOsmathusYellow.png	10	0x30bc	
+flower	yellow-tulip bag		plants	https://acnhcdn.com/latest/FtrIcon/SeedTulipYellow.png	10	0xb48	
+crafting materials	young spring bamboo		etc	https://acnhcdn.com/latest/FtrIcon/DIYBambooSpring.png	30	0x1661	
 photos	Ace's photo	natural wood		https://acnhcdn.com/latest/FtrIcon/BromideNpcNmlBrd09_Remake_0_0.png	1	0x312b	
 photos	Ace's photo	dark wood		https://acnhcdn.com/latest/FtrIcon/BromideNpcNmlBrd09_Remake_1_0.png	1	0x10000312b	
 photos	Ace's photo	pastel		https://acnhcdn.com/latest/FtrIcon/BromideNpcNmlBrd09_Remake_2_0.png	1	0x20000312b	
@@ -25041,4 +25020,43 @@ vegetable	small tomato sprout		plant;vegetable;tomato	https://acnhcdn.com/latest
 vegetable	large wheat sprout		plant;vegetable;wheat	https://acnhcdn.com/latest/MenuIcon/PltWheat.png	1	0xbd9	growthstages
 vegetable	medium wheat sprout		plant;vegetable;wheat	https://acnhcdn.com/latest/MenuIcon/PltWheat.png	1	0xbd8	growthstages
 vegetable	ripe wheat plant		plant;vegetable;wheat	https://acnhcdn.com/latest/MenuIcon/PltWheat.png	1	0x3263	
-vegetable	small wheat sprout		plant;vegetable;wheat	https://acnhcdn.com/latest/MenuIcon/PltWheat.png	1	0xbd7	growthstages`;
+vegetable	small wheat sprout		plant;vegetable;wheat	https://acnhcdn.com/latest/MenuIcon/PltWheat.png	1	0xbd7	growthstages
+other	spoiled turnips		etc	https://acnhcdn.com/latest/FtrIcon/Kabu_Spoil.png	1	0xa52	weird
+other	Bell bag		etc	https://acnhcdn.com/latest/FtrIcon/PhotoStudioBellBag.png	99	0x1e33	weird
+other	Bell coin		etc	https://acnhcdn.com/latest/FtrIcon/PhotoStudioBell.png	9	0x1e32	weird
+other	What was this again?			https://acnhcdn.com/latest/FtrIcon/LostQuestBagDust.png		0x1222	weird
+other	What was this again?			https://acnhcdn.com/latest/FtrIcon/LostQuestBookDust.png		0x1223	weird
+other	What was this again?			https://acnhcdn.com/latest/FtrIcon/LostQuestNoteDust.png		0x1533	weird
+other	What was this again?			https://acnhcdn.com/latest/MenuIcon/Present2.png		0x9f2	weird
+other	Present			https://acnhcdn.com/latest/MenuIcon/Present.png		0x1180	weird
+other	turnips			https://acnhcdn.com/latest/FtrIcon/PhotoStudioKabu.png		0x1e36	weird
+other	treasure			https://acnhcdn.com/latest/MenuIcon/Present2.png		0x9f1	weird
+other	delivery box			https://acnhcdn.com/latest/MenuIcon/Present2.png		0x1095	weird
+other	gift			https://acnhcdn.com/latest/FtrIcon/DummyWrappingOrnament.png		0x35e1	weird
+other	present (black)		etc	https://acnhcdn.com/latest/FtrIcon/DummyWrappingBlack.png	1	0x1e22	weird
+other	present (blue)		etc	https://acnhcdn.com/latest/FtrIcon/DummyWrappingBlue.png	1	0x1e1c	weird
+other	present (brown)		etc	https://acnhcdn.com/latest/FtrIcon/DummyWrappingBrown.png	1	0x1e20	weird
+other	present (chartreuse)		etc	https://acnhcdn.com/latest/FtrIcon/DummyWrappingLightGreen.png	1	0x1e16	weird
+other	present (gold)		etc	https://acnhcdn.com/latest/FtrIcon/DummyWrappingGold.png	1	0x1e1f	weird
+other	present (gray)		etc	https://acnhcdn.com/latest/FtrIcon/DummyWrappingGary.png	1	0x1e21	weird
+other	present (green)		etc	https://acnhcdn.com/latest/FtrIcon/DummyWrappingGreen.png	1	0x1e17	weird
+other	present (light-blue)		etc	https://acnhcdn.com/latest/FtrIcon/DummyWrappingLightBlue.png	1	0x1e19	weird
+other	present (mint)		etc	https://acnhcdn.com/latest/FtrIcon/DummyWrappingMint.png	1	0x1e18	weird
+other	present (navy)		etc	https://acnhcdn.com/latest/FtrIcon/DummyWrappingNavy.png	1	0x1e1b	weird
+other	present (orange)		etc	https://acnhcdn.com/latest/FtrIcon/DummyWrappingOrange.png	1	0x1e15	weird
+other	present (pink)		etc	https://acnhcdn.com/latest/FtrIcon/DummyWrappingPink.png	1	0x1e14	weird
+other	present (purple)		etc	https://acnhcdn.com/latest/FtrIcon/DummyWrappingPurple.png	1	0x1e1a	weird
+other	present (red)		etc	https://acnhcdn.com/latest/FtrIcon/DummyWrappingRed.png	1	0x1e1e	weird
+other	present (white)		etc	https://acnhcdn.com/latest/FtrIcon/DummyWrappingWhite.png	1	0x1e1d	weird
+other	present (yellow)		etc	https://acnhcdn.com/latest/FtrIcon/DummyWrappingYellow.png	1	0x1e13	weird
+other	lost item			https://acnhcdn.com/latest/MenuIcon/Porch.png		0x946	weird
+other	lost item			https://acnhcdn.com/latest/MenuIcon/Book.png		0x947	weird
+other	lost item			https://acnhcdn.com/latest/MenuIcon/LostQuestMemo.png		0x1532	weird
+other	lucky money			https://acnhcdn.com/latest/MenuIcon/OtoshidamaSealCh.png		0x36da	weird
+other	otoshidama			https://acnhcdn.com/latest/MenuIcon/OtoshidamaSealJp.png		0x36dc	weird
+other	sebaetdon			https://acnhcdn.com/latest/MenuIcon/OtoshidamaSealKr.png		0x36db	weird
+other	communicator part			https://acnhcdn.com/latest/MenuIcon/JohnyParts.png		0x94d	weird
+other	communicator			https://acnhcdn.com/latest/MenuIcon/PirateQuest.png		0x3331	weird
+other	ぞうきんがけエプロン		ぞうきんがけ	https://acnhcdn.com/latest/FtrIcon/TopsTexTopCoatHCloth0.png		0x323b	weird
+other	ぞうきんがけのズボン		ぞうきんがけ	https://acnhcdn.com/latest/FtrIcon/BottomsTexPantsNormalCloth0.png		0x323c	weird
+other	ぞうきんがけのバンダナ		ぞうきんがけ	https://acnhcdn.com/latest/FtrIcon/CapHatCloth0.png		0x323d	weird`;

@@ -326,5 +326,7 @@ let tagDisplayName = {
 	"azalea": "Azalea",
 	"camellia": "Camellia",
 	"plumeria": "Plumeria",
-	"hibiscus": "Hibiscus"
-}
+	"hibiscus": "Hibiscus",
+	
+	"ぞうきんがけ": "ぞうきんがけ"
+};
