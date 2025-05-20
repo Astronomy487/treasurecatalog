@@ -524,7 +524,7 @@ function makeParticle(x, y, text) {
 	}, 1500);
 }
 
-function copyDropCodes() {
+function copyDropCodes(x, y) {
 	let output = [];
 	let acc = [];
 	for (let id in wishlists[currentlySelectedWishlist]) for (let i = 0; i < wishlists[currentlySelectedWishlist][id] && i < 100; i++) {
@@ -535,7 +535,22 @@ function copyDropCodes() {
 		}
 	}
 	if (acc.length) output.push(".drop " + acc.join(" "));
-	navigator.clipboard.writeText(output.join('\n'));
+	if (!output.length) return;
+	if (window.isSecureContext) {
+		navigator.clipboard.writeText(output.join('\n'));
+		makeParticle(x, y, 'Copied to clipboard');
+	} else {
+		let modal = prepareModal();
+		if (!modal) return;
+		modal.style.width = "32rem";
+		modal.appendChild(document.createElement("p")).innerText = "Sorry, I can't write directly to your computer's clipboard. Copy the drop codes manually:";
+		let div = modal.appendChild(document.createElement("p"));
+		div.innerText = output.join("\n");
+		div.style.padding = "1rem";
+		div.style.border = "solid 2px var(--white)";
+		div.style.borderRadius = "0.25rem";
+		div.style.userSelect = "all";
+	}
 }
 
 function updateWishlistBottomMessage() {
