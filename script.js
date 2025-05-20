@@ -43,10 +43,6 @@ for (let item of items) {
 	}
 }
 
-function saveWishlist() {
-	localStorage.setItem("acnhitemwishlist", JSON.stringify(wishlists));
-}
-
 function categoryDisplayName(internalName) {
 	if (internalName == "flower") internalName = "Flowers";
 	if (internalName == "tree") internalName = "Trees";
@@ -61,8 +57,6 @@ for (let item of items) {
 	if (!categories[item.category]) categories[item.category] = 0;
 	categories[item.category]++;
 }
-let acceptableCategories = {};
-for (let category in categories) acceptableCategories[category] = true;
 let categoriesGroups = [
 	[
 		["Furniture", ["housewares", "miscellaneous", "wall-mounted", "ceiling decor"]],
@@ -123,22 +117,6 @@ function makeCategoriesDropdown(parentItem) {
 			}
 		}
 	}
-	function updateCategoryDisplay() {
-		let labelsPresent = [];
-		for (let c of categoriesGroups) for (let [supercategoryName, categories] of c) {
-			let allPresent = true;
-			for (let c of categories) if (!acceptableCategories[c]) allPresent = false;
-			if (allPresent) labelsPresent.push(supercategoryName);
-			else for (let c of categories) if (acceptableCategories[c]) labelsPresent.push(categoryDisplayName(c));
-		}
-		let text;
-		if (labelsPresent.length == 0) text = "<span style=\"color: var(--black); background: var(--red); border-radius: 100%; display: inline-block; width: 1.125rem; text-align: center;\">!</span> Nothing";
-		else if (labelsPresent.length == 1) text = labelsPresent[0];
-		else if (labelsPresent.length == 2) text = simpleCapitalize(labelsPresent.join(" and "), true);
-		else if (!Object.keys(categories).filter(x => !acceptableCategories[x]).length) text = "Everything";
-		else text = Object.keys(categories).filter(x => acceptableCategories[x]).length + " categories";
-		document.querySelector("#search-parameters-category").innerHTML = text;
-	}
 	let allButton = categoriesDropdown.appendChild(document.createElement("button"));
 	allButton.setAttribute("class", "subtle-button");
 	allButton.innerText = "Enable all categories";
@@ -160,6 +138,22 @@ function makeCategoriesDropdown(parentItem) {
 		presentResults();
 	}
 }
+function updateCategoryDisplay() {
+	let labelsPresent = [];
+	for (let c of categoriesGroups) for (let [supercategoryName, categories] of c) {
+		let allPresent = true;
+		for (let c of categories) if (!acceptableCategories[c]) allPresent = false;
+		if (allPresent) labelsPresent.push(supercategoryName);
+		else for (let c of categories) if (acceptableCategories[c]) labelsPresent.push(categoryDisplayName(c));
+	}
+	let text;
+	if (labelsPresent.length == 0) text = "<span style=\"color: var(--black); background: var(--red); border-radius: 100%; display: inline-block; width: 1.125rem; text-align: center;\">!</span> Nothing";
+	else if (labelsPresent.length == 1) text = labelsPresent[0];
+	else if (labelsPresent.length == 2) text = simpleCapitalize(labelsPresent.join(" and "), true);
+	else if (!Object.keys(categories).filter(x => !acceptableCategories[x]).length) text = "Everything";
+	else text = Object.keys(categories).filter(x => acceptableCategories[x]).length + " categories";
+	document.querySelector("#search-parameters-category").innerHTML = text;
+}
 
 
 let tags = {};
@@ -170,7 +164,6 @@ for (let item of items) for (let tag of item.tags) {
 //for (let tag in tags) if (tags[tag] <= 1) delete tags[tag];
 //for (let item of items) item.tags = item.tags.filter(x => tags[x]);
 
-let selectedTags = {};
 
 function prepareModal() {
 	if (document.querySelector(".modal")) return undefined;
@@ -216,7 +209,7 @@ function preparePositionalModal(parentItem) {
 	return modal;
 }
 
-function addTag(tag) {
+function addTag(tag, supressPresentResults = false) {
 	if (selectedTags[tag] || !tags[tag]) return;
 	selectedTags[tag] = true;
 	let tagPlate = document.createElement("span");
@@ -226,7 +219,7 @@ function addTag(tag) {
 		removeTag(this, tag);
 	}
 	document.querySelector("#search-parameters-tags").appendChild(tagPlate);
-	presentResults();
+	if (!supressPresentResults) presentResults();
 	document.querySelector("#search-parameters-add-tag").style.marginLeft = "0.25rem";
 }
 
@@ -284,7 +277,6 @@ function promptAddTag(parentItem) {
 	}
 }
 
-let advancedFilters = {"":true};
 function promptAdvancedFilters() {
 	let modal = prepareModal();
 	if (!modal) return;
@@ -370,31 +362,62 @@ function removeTag(div, tag) {
 	presentResults();
 }
 
-let wishlists = JSON.parse(localStorage.getItem("acnhitemwishlist"));
-if (!wishlists) {
-	wishlists = {};
-	/* let modal = prepareModal();
-	if (modal) {
-		modal.appendChild(document.createElement("p")).innerText = "Hello!"
-		modal.appendChild(document.createElement("p")).innerHTML = "This is <span style=\"color: var(--blue);\">Treasure catalog</span>, a list of items for Animal Crossing: New Horizons. You can collect items into wishlists, and then export their hex codes for use with drop bots on treasure islands."
-		let button = modal.appendChild(document.createElement("button"));
-		button.innerText = "Let's start!";
-		button.style.margin = "0 auto";
-		button.style.display = "block";
-		button.onclick = document.querySelector(".modal-cover").onclick;
-	} */
+let currentDataFormatNumber = 1;
+let savedata = JSON.parse(localStorage.getItem("acnhitemwishlist")) || {};
+/*
+savedata has fields, which mostly correspond to global variables
+- wishlists
+- selectedTags
+- acceptableCategories
+- currentSearchBoxText (NOT a global variable)
+- advancedFilters
+- currentlySelectedWishlist
+- dataFormatNumber
+*/
+let wishlists;
+let selectedTags = {};
+let acceptableCategories;
+let advancedFilters;
+let currentlySelectedWishlist;
+if (savedata.dataFormatNumber == undefined || savedata.dataFormatNumber < currentDataFormatNumber) {
+	console.log("SETUP TOTALLY NEW SAVE DATA");
+	//Setup totally new save data
+	wishlists = {"My wishlist":{}};
+	acceptableCategories = {};
+	for (let category in categories) acceptableCategories[category] = true;
+	document.querySelector("#search-parameters-name").value = "";
+	advancedFilters = {"":true};
+	currentlySelectedWishlist = "My wishlist";
+} else {
+	wishlists = savedata.wishlists;
+	acceptableCategories = savedata.acceptableCategories;
+	document.querySelector("#search-parameters-name").value = savedata.currentSearchBoxText;
+	advancedFilters = savedata.advancedFilters;
+	currentlySelectedWishlist = savedata.currentlySelectedWishlist;
+	for (let tag in savedata.selectedTags) addTag(tag, true); //true to supress several presentResults calls
 }
-let currentlySelectedWishlist = "";
-if (!Object.keys(wishlists).length) startNewWishlist(false);
-else goToWishlist(Object.keys(wishlists).sort()[0]);
+function saveState() {
+	savedata = {
+		wishlists: wishlists,
+		selectedTags: selectedTags,
+		acceptableCategories: acceptableCategories,
+		currentSearchBoxText: document.querySelector("#search-parameters-name").value,
+		advancedFilters: advancedFilters,
+		currentlySelectedWishlist: currentlySelectedWishlist,
+		dataFormatNumber: currentDataFormatNumber
+	};
+	localStorage.setItem("acnhitemwishlist", JSON.stringify(savedata));
+}
+
+goToWishlist(currentlySelectedWishlist);
 
 function startNewWishlist(selectTextBox = true) {
 	let name = "My wishlist";
 	for (let i = 2; wishlists[name]; i++) name = "My wishlist " + i;
 	wishlists[name] = {};
-	saveWishlist();
 	goToWishlist(name);
 	if (selectTextBox) document.querySelector("#wishlist-name").select();
+	saveState();
 }
 
 function changeCurrentWishlistName(newName) {
@@ -405,8 +428,8 @@ function changeCurrentWishlistName(newName) {
 	}
 	wishlists[newName] = wishlists[currentlySelectedWishlist];
 	delete wishlists[currentlySelectedWishlist];
-	saveWishlist();
 	currentlySelectedWishlist = newName;
+	saveState();
 }
 
 function goToWishlist(wishlistName) {
@@ -425,7 +448,7 @@ function goToWishlist(wishlistName) {
 function removeWishlist(wishlistName) {
 	if (!wishlists[wishlistName]) return;
 	delete wishlists[wishlistName];
-	saveWishlist();
+	saveState();
 	if (currentlySelectedWishlist == wishlistName) {
 		let available = Object.keys(wishlists).sort();
 		if (available.length) goToWishlist(available[0]);
@@ -486,7 +509,7 @@ function addWishlistEntry(item, qty = 1, bypassCheck = false) {
 	div.setAttribute("item-id", item.id);
 	item.img.setAttribute("wishlisted", "true");
 	updateWishlistBottomMessage();
-	saveWishlist();
+	saveState();
 }
 
 function removeWishlistEntry(item) {
@@ -496,7 +519,7 @@ function removeWishlistEntry(item) {
 	delete wishlists[currentlySelectedWishlist][item.id];
 	item.img.setAttribute("wishlisted", "false");
 	updateWishlistBottomMessage();
-	saveWishlist();
+	saveState();
 }
 
 function makeParticle(x, y, text) {
@@ -619,7 +642,10 @@ function presentResults() {
 		declaration.style.color = "var(--gray)";
 		declaration.innerText = "No results";
 	}
+	
+	saveState();
 }
-document.querySelector("#search-parameters-name").value = "";
+
 presentResults();
 updateWishlistBottomMessage();
+updateCategoryDisplay();
