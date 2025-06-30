@@ -327,6 +327,6 @@ let tagDisplayName = {
 	"camellia": "Camellia",
 	"plumeria": "Plumeria",
 	"hibiscus": "Hibiscus",
-	
-	"ぞうきんがけ": "ぞうきんがけ"
+	"canusecustompatterns": "Can use custom patterns",
+	"canusesablepatterns": "Can use Sable patterns"
 };

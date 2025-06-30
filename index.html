@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta property="og:title" content="Treasure catalog">
+	<meta property="og:description" content="A catalog of every item in Animal Crossing: New Horizons, including corresponding drop codes.">
+	<meta property="og:url" content="https://www.astronomy487.com/treasurecatalog/">
 	<link rel="icon" href="icon.png">
 	<title>Treasure catalog</title>
 	<link rel="stylesheet" href="styles.css">
@@ -24,6 +27,7 @@
 				</tr>
 			</table>
 			<div id="results"></div>
+			<div id="investigate" style="display: none;"><img id="investigate-display"><div id="investigate-info"></div></div>
 		</div>
 		<div id="right">
 			<input id="wishlist-name" onchange="changeCurrentWishlistName(this.value);"></input>
@@ -38,12 +42,12 @@
 		</div>
 	</main>
 	<div id="loading-cover">
-		<div>
+		<!-- <div>
 			<div style="vertical-align: middle; transform: translateY(-0.125rem); height: 2rem; width: 2rem; display: inline-block; background: var(--blue); border-radius: 100%; user-select: none; margin-right: 0.5rem;"></div>
 			<div style="font-size: 1.75em; display: inline-block; vertical-align: middle; transform: translateY(-0.25rem);">Treasure catalog</div>
 			<br>
 			<div style="color: var(--gray); font-size: 1.125rem; margin-top: 1rem;">Loading...</div>
-		</div>
+		</div> -->
 	</div>
 	<script src="itemdata.js"></script>
 	<script src="tagdisplaynames.js" ></script>

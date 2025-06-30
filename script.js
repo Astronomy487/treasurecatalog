@@ -6,8 +6,8 @@ function simpleCapitalize(str, forceLowerCase = false) {
 
 let items = [];
 for (let line of data.split("\n")) {
-	let [category, name, customization, tags, filename, stack, id, advancedFilter] = line.split("\t").map(x => x.trim());
-	items.push({
+	let [category, name, customization, tags, filename, stack, id, advancedFilter, patternRule] = line.split("\t").map(x => x.trim());
+	let item = {
 		category: category,
 		name: name.startsWith("π") ? name : simpleCapitalize(name),
 		customization: customization.length ? customization.split(";").map(simpleCapitalize) : [],
@@ -17,13 +17,22 @@ for (let line of data.split("\n")) {
 		filename: filename,
 		stack: stack,
 		id: id.substring(2),
-		requiredAdvancedFilter: advancedFilter
-	});
+		requiredAdvancedFilter: advancedFilter,
+		patternRule: patternRule,
+		idReversed: id.substring(2).padStart(16, "0").substring(8) + id.substring(2).padStart(16, "0").substring(0, 8)
+	};
+	if (item.patternRule.startsWith("D:")) item.patternRule = ""; //hack to ignore D: patterns, because they aren't worth commenting on
+	let patternRuleContexts = item.patternRule.substring(0, item.patternRule.indexOf(":"));
+	if (patternRuleContexts.includes("C")) item.tags.push("canusecustompatterns");
+	if (patternRuleContexts.includes("S")) item.tags.push("canusesablepatterns");
+	item.tags = item.tags.sort();
+	items.push(item);
 }
 function prepareTextForSearch(txt) {
 	return txt.trim().toLowerCase().replace(/[ %&'(),-.?←↑→;!]/g, "").replace(/[éè]/g, "e").replace(/[àáâ]/g, "a").replace(/[ñ]/g, "n").replace(/[π]/g, "pi");
 }
 items = items.sort((a,b) => a.name > b.name ? 1 : -1);
+items = items.sort((a,b) => a.idReversed > b.idReversed ? 1 : -1);
 for (let i = 0; i < items.length; i++) items[i].order = i;
 let itemsById = {}; //points to stuff in items, using their id
 for (let item of items) {
@@ -40,6 +49,12 @@ for (let item of items) {
 	}
 	if (item.requiredAdvancedFilter != "") {
 		img.setAttribute("advancedfilter", item.requiredAdvancedFilter);
+	}
+	img.onmouseenter = function() {
+		investigateItem(item);
+	}
+	img.onmouseleave = function() {
+		if (currentlyInvestigatedItem == item) investigateItem(null);
 	}
 }
 
@@ -474,6 +489,12 @@ function addWishlistEntry(item, qty = 1, bypassCheck = false) {
 	div.setAttribute("class", "wishlist-entry");
 	let img = div.appendChild(document.createElement("img"));
 	img.src = item.filename;
+	div.onmouseenter = function() {
+		investigateItem(item);
+	}
+	div.onmouseleave = function() {
+		if (currentlyInvestigatedItem == item) investigateItem(null);
+	}
 	if (item.requiredAdvancedFilter != "") img.setAttribute("advancedfilter", item.requiredAdvancedFilter);
 	let nameTile = div.appendChild(document.createElement("span"));
 	nameTile.innerText = item.name;
@@ -483,10 +504,6 @@ function addWishlistEntry(item, qty = 1, bypassCheck = false) {
 	}
 	if (item.stack != 1) {
 		nameTile.appendChild(document.createElement("b")).innerText = "x" + item.stack + "";
-	}
-	if (item.tags.length) nameTile.appendChild(document.createElement("br"));
-	for (let tag of item.tags) {
-		nameTile.appendChild(document.createElement("i")).innerText = tagDisplayName[tag];
 	}
 	let quantity = div.appendChild(document.createElement("input"));
 	quantity.value = wishlists[currentlySelectedWishlist][item.id] = qty;
@@ -573,6 +590,47 @@ function copyDropCodes(x, y) {
 		div.style.border = "solid 2px var(--white)";
 		div.style.borderRadius = "0.25rem";
 		div.style.userSelect = "all";
+	}
+}
+
+let currentlyInvestigatedItem = null;
+function investigateItem(item) {
+	let infoBox = document.querySelector("#investigate-info");
+	while (infoBox.firstChild) infoBox.firstChild.remove();
+	if (item == currentlyInvestigatedItem) return;
+	if (item == null) {
+		currentlyInvestigatedItem = null;
+		document.querySelector("#investigate").style.display = "none";
+		return;
+	}
+	currentlyInvestigatedItem = item;
+	document.querySelector("#investigate-display").src = item.filename;
+	document.querySelector("#investigate").style.display = "block";
+	if (item.requiredAdvancedFilter != "") document.querySelector("#investigate-display").setAttribute("advancedfilter", item.requiredAdvancedFilter);
+	else document.querySelector("#investigate-display").removeAttribute("advancedfilter");
+	let itemName = infoBox.appendChild(document.createElement("div"));
+	itemName.innerText = item.name;
+	for (let c of item.customization) {
+		let b = itemName.appendChild(document.createElement("b"));
+		b.innerText = "(" + c + ")";
+	}
+	if (item.tags.length) {
+		let tagContainer = infoBox.appendChild(document.createElement("div"));
+		for (let tag of item.tags) {
+			let i = tagContainer.appendChild(document.createElement("i"));
+			i.innerText = tagDisplayName[tag];
+		}
+	}
+	if (item.patternRule != "") {
+		let [contexts, part] = item.patternRule.split(":");
+		let patternTypes = [];
+		if (contexts.includes("C")) patternTypes.push("custom patterns");
+		if (contexts.includes("S")) patternTypes.push("Sable patterns");
+		let comment = infoBox.appendChild(document.createElement("div"));
+		comment.innerText = "The " + part.toLowerCase() + " on this item can also use "+patternTypes.join(" and ")+".";
+		comment.style.marginTop = "0.25rem";
+		comment.style.fontSize = "0.875rem";
+		comment.style.color = "var(--gray)";
 	}
 }
 
